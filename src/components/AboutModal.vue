@@ -1,0 +1,125 @@
+<template>
+  <q-card>
+    <q-toolbar v-show="!isIndex">
+      <q-avatar>
+        <img src="/assets/images/gymbag.png">
+      </q-avatar>
+
+      <q-toolbar-title class="text-center">
+        Everyday <span class="text-weight-bold">Neuro</span> Bingo
+      </q-toolbar-title>
+
+      <q-btn
+        v-close-popup
+        dense
+        flat
+        icon="close"
+        round
+      />
+    </q-toolbar>
+
+    <HowToPlayPanel v-if="!isIndex" />
+
+    <q-card-section>
+      <p class="no-margin">
+        Brought to you by:
+      </p>
+      <ul class="text-left q-mt-none">
+        <li>
+          <a
+            ref="noopener noreferrer"
+            href="https://cjmaxik.com?ref=cerber-bingo"
+            target="_blank"
+          >CJMAXiK</a> - Lead Developer
+        </li>
+
+        <li v-if="!isIndex">
+          <a
+            ref="noopener noreferrer"
+            href="https://github.com/cjmaxik/everyday-cerber-bingo/graphs/contributors?ref=cerber-bingo"
+            target="_blank"
+          >Contributors</a> - Various help
+        </li>
+      </ul>
+
+      <p v-if="!isIndex">
+        Source code is available on <a
+          ref="noopener noreferrer"
+          href="https://github.com/cjmaxik/everyday-cerber-bingo?ref=cerber-bingo"
+          target="_blank"
+        >GitHub</a>.
+      </p>
+
+      <p v-else>
+        Full credits are available <a
+          ref="noopener noreferrer"
+          href="https://github.com/cjmaxik/everyday-cerber-bingo#credits?ref=cerber-bingo"
+          target="_blank"
+        >here</a> and in the About section.
+      </p>
+
+      <hr>
+
+      <p>
+        <q-btn-group spread>
+          <q-btn
+            ref="noopener noreferrer"
+            dense
+            href="https://www.twitch.tv/cerbervt?ref=cerber-bingo"
+            label="Twitch"
+            no-caps
+            style="background-color: #6441a5;"
+            target="_blank"
+            text-color="white"
+          />
+          <q-btn
+            ref="noopener noreferrer"
+            dense
+            href="https://www.youtube.com/@cerberVT?ref=cerber-bingo"
+            label="YouTube"
+            no-caps
+            style="background-color: #c4302b;"
+            target="_blank"
+            text-color="white"
+          />
+        </q-btn-group>
+
+        <q-btn-group spread>
+          <q-btn
+            ref="noopener noreferrer"
+            dense
+            href="https://twitter.com/cerberVT?ref=cerber-bingo"
+            label="Twitter"
+            no-caps
+            style="background-color: #00acee;"
+            target="_blank"
+            text-color="white"
+          />
+          <q-btn
+            ref="noopener noreferrer"
+            dense
+            href="https://www.tiktok.com/@cerbervt?ref=cerber-bingo"
+            label="TikTok"
+            no-caps
+            style="background-color: #1DA1F2;"
+            target="_blank"
+            text-color="white"
+          />
+        </q-btn-group>
+      </p>
+    </q-card-section>
+  </q-card>
+</template>
+
+<script setup>
+// @ts-check
+
+import HowToPlayPanel from './HowToPlayPanel.vue'
+
+defineProps({
+  isIndex: {
+    type: Boolean,
+    default: false
+  }
+})
+</script>
