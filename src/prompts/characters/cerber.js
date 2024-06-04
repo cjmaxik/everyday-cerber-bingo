@@ -96,7 +96,6 @@ export const cerbathonPrompts = [
   'lore video premiere',
   'just chatting until 2 hour mark',
   'staring contest'
-
 ]
 
 /* Only applies for collabs
