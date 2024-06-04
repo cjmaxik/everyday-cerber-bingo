@@ -33,7 +33,7 @@ export const regularPrompts = [
   'mods have to remind about redeems',
   'appreciating (not\xa0MILM)',
   '36% moment',
-  'says \'yippee\' unprompted',
+  'says "yippee" unprompted',
 
   // cerber gaming
   'forgets to actually play the game',
@@ -89,14 +89,13 @@ export const cerbathonPrompts = [
   // cerbathon specific
   'stream ends, timer has increased since start',
   'cerbathon splash animation more than once',
-  'cerber fact of the day',
+  'cerber fact of the\xa0day',
   'cerber can\'t decide what to do',
   '"your timer is broken, it\'s only going up"',
   // 'bingo metagaming' <- this one is kinda unclear & rare so idk
   'lore video premiere',
-  'just chatting until 2 hour mark',
+  'just chatting until 2\xa0hour mark',
   'staring contest'
-
 ]
 
 /* Only applies for collabs
