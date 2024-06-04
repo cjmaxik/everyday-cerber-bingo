@@ -1,6 +1,7 @@
 // @ts-check
 // eslint-disable-next-line no-unused-vars
 import * as Types from 'helpers/types.d'
+import { useLocalStorage } from '@vueuse/core'
 
 /**
  * Split array into chunks
@@ -125,21 +126,29 @@ export const getRandomInt = (min, max) => {
 }
 
 /**
- * Generates seed phrase based on a browser + current date in UTC timezone
+ * Generates seed phrase based on a browser + current date in UTC timezone + random user seed (in local storage)
  * @param {number} version
  * @returns {string} Seed phrase
  */
 export const generateBrowserSeed = (version) => {
+  const randomUserSeed = useLocalStorage('randomUserSeed', getRandomInt(1, 69420))
+  console.debug('Random user seed -', randomUserSeed.value)
+
+  // offsetting to 15:29 UTC
   const now = new Date()
-  now.setUTCHours(15, 30, 0, 0)
+  const offset = 15 * 60 + 29
+  if (now.getUTCHours() * 60 + now.getUTCMinutes() < offset) {
+    now.setUTCDate(now.getUTCDate() - 1)
+  }
 
   return ''.concat(
     version.toString(),
-    now.getUTCFullYear().toString(),
-    now.getUTCMonth().toString(),
     now.getUTCDate().toString(),
-    window.navigator?.languages.toString() ?? 'en-US',
-    window.navigator?.userAgent ?? 'Minawan'
+    now.getUTCMonth().toString(),
+    now.getUTCFullYear().toString(),
+    Intl.DateTimeFormat().resolvedOptions().timeZone,
+    window.navigator?.languages.toString() ?? 'en',
+    randomUserSeed.value.toString()
   ).replaceAll(/[^a-zA-Z0-9]+/g, '')
 }
 

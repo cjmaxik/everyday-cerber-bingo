@@ -44,7 +44,7 @@ export const useGameStateStore = (id) => defineStore(`gameState-${id}`, {
   },
 
   actions: {
-    clearAll () {
+    clearAll() {
       this.ready = false
 
       this.seed = 0
@@ -59,7 +59,7 @@ export const useGameStateStore = (id) => defineStore(`gameState-${id}`, {
      * @param {number} version Dataset version
      * @param {number} [forceSeed] Seed to force
     */
-    generateBoard (streamData, version, forceSeed) {
+    generateBoard(streamData, version, forceSeed) {
       console.group('Initializing random seed...')
 
       const seedPhrase = generateBrowserSeed(version)
@@ -103,7 +103,7 @@ export const useGameStateStore = (id) => defineStore(`gameState-${id}`, {
         }
       }
 
-      console.log('Seed has changes - clearing everything...')
+      console.log('Seed has changed - clearing everything...')
       this.clearAll()
 
       console.group('Initializing prompts...')
@@ -153,7 +153,7 @@ export const useGameStateStore = (id) => defineStore(`gameState-${id}`, {
      * @param {number} index
      * @param {boolean} hideTally
      */
-    increment (index, hideTally) {
+    increment(index, hideTally) {
       const currentTally = this.board[index].tally
 
       if (hideTally) {
@@ -169,7 +169,7 @@ export const useGameStateStore = (id) => defineStore(`gameState-${id}`, {
     /**
      * @param {number} index
      */
-    decrement (index) {
+    decrement(index) {
       if (this.board[index].tally <= 1) {
         this.board[index].tally = 0
       } else {
@@ -177,7 +177,7 @@ export const useGameStateStore = (id) => defineStore(`gameState-${id}`, {
       }
     },
 
-    checkForBingo () {
+    checkForBingo() {
       const boardSize = this.big ? 'big' : 'small'
       const blocksWithTally = this.board.filter(x => x.tally).map((x) => x.index)
 
