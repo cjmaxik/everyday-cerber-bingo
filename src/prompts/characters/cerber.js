@@ -89,7 +89,7 @@ export const cerbathonPrompts = [
   // cerbathon specific
   'stream ends, timer has increased since start',
   'cerbathon splash animation more than once',
-  'cerber fact of the day',
+  'cerber fact of the\xa0day',
   'cerber can\'t decide what to do',
   '\"your timer is broken, it\'s only going up\"',
   //'bingo metagaming' <- this one is kinda unclear & rare so idk
