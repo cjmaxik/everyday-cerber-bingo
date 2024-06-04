@@ -94,7 +94,7 @@ export const cerbathonPrompts = [
   '\"your timer is broken, it\'s only going up\"',
   //'bingo metagaming' <- this one is kinda unclear & rare so idk
   'lore video premiere',
-  'just chatting until 2 hour mark',
+  'just chatting until 2\xa0hour mark',
   'staring contest'
 ]
 
