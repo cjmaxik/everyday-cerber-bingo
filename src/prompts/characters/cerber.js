@@ -33,7 +33,7 @@ export const regularPrompts = [
   'mods have to remind about redeems',
   'appreciating (not\xa0MILM)',
   '36% moment',
-  'says \'yippee\' unprompted',
+  'says "yippee" unprompted',
 
   // cerber gaming
   'forgets to actually play the game',
