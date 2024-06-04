@@ -6,7 +6,7 @@
       </q-avatar>
 
       <q-toolbar-title class="text-center">
-        Everyday <span class="text-weight-bold">Neuro</span> Bingo
+        Everyday <span class="text-weight-bold">Cerber</span> Bingo
       </q-toolbar-title>
 
       <q-btn

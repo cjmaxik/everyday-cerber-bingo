@@ -3,7 +3,7 @@ export const base = {
   name: 'Cerber',
 
   // text color
-  color: '#843a49',
+  color: '#9146FF',
 
   // assets folder
   assetsFolder: 'cerber',
@@ -29,16 +29,16 @@ export const regularPrompts = [
   '"no, minawan! stop!"',
   'asks minawan for help',
   'says hi to a bunch of people',
-  'cerber of the day',
+  'cerber of the\xa0day',
   'mods have to remind about redeems',
-  'appreciating (not MILM)',
+  'appreciating (not\xa0MILM)',
   '36% moment',
 
   // cerber gaming
   'forgets to actually play the game',
 
   // karaoke
-  'sings "Mogu Mogu"',
+  'sings "Mogu\xa0Mogu"',
   'forgets song lyrics',
   'sings Happy Birthday',
   '"one more song!" but sings more'
@@ -47,7 +47,9 @@ export const regularPrompts = [
 // Any stuff berber can mention prompted or unprompted
 export const mentionPrompts = [
   'says "I\'m a hellhound"',
-  'Man I Love Minawan'
+  'Man I Love Minawan',
+  'struggles to come up with the name',
+  'asks if someone didn\'t AWOO'
 ]
 
 export const chatPrompts = [
@@ -68,7 +70,6 @@ export const redeemPrompts = [
   'put in jail',
   'ara ara redeem',
   'AWOOOO redeem',
-  'asks if someone didn\'t AWOO',
   'hydrate redeem'
 ]
 

@@ -9,7 +9,24 @@ const regularCerber = {
   id: 'cerber',
   name: 'Cerber',
 
-  prompts: cerber.regularPrompts
+  prompts: mergeUnique(
+    ...cerber.regularPrompts,
+    ...cerber.mentionPrompts
+  )
+}
+
+const redeemPrompts = {
+  ...cerber.base,
+
+  id: 'redeems',
+  name: 'Redeems',
+  color: '#bb440b',
+
+  prompts: mergeUnique(
+    ...cerber.redeemPrompts
+    // TODO: add rare redeems if they are more common during the stream
+    // ...cerber.rareRedeemPrompts
+  )
 }
 
 const chatPrompts = {
@@ -25,6 +42,6 @@ export default {
   name: 'Cerbathon',
   image: 'cerber/36percent.png',
   participants: [
-    regularCerber, chatPrompts
+    regularCerber, chatPrompts, redeemPrompts
   ]
 }

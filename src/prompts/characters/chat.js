@@ -1,11 +1,7 @@
-import * as cerber from 'characters/cerber'
-
 export const base = {
-  ...cerber.base,
-
   id: 'chat',
   name: 'Chat',
-  color: '#9146FF',
+  color: '#7f59b6',
   assetsFolder: 'chat',
   image: 'chatting.png',
   sounds: [

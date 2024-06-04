@@ -231,7 +231,7 @@ onBeforeMount(() => {
 
     // Rename title
     settings.streamName = data.name
-    document.title = `${data.name} | Everyday Neuro Bingo`
+    document.title = `${data.name} | Everyday Cerber Bingo`
 
     // Apply CSS stuff
     document.getElementById('participantsStyles')?.remove()
@@ -255,7 +255,7 @@ onBeforeMount(() => {
 
 // page title
 onBeforeUnmount(() => {
-  document.title = 'Everyday Neuro Bingo'
+  document.title = 'Everyday Cerber Bingo'
 })
 
 /**
