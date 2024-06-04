@@ -3,7 +3,7 @@ import { mergeUnique } from 'src/helpers/helpers'
 import * as cerber from 'characters/cerber'
 import * as chat from 'characters/chat'
 
-const regularNeuro = {
+const regularCerber = {
   ...cerber.base,
 
   id: 'cerber',
@@ -25,6 +25,6 @@ export default {
   name: 'Cerbathon',
   image: 'cerber/36percent.png',
   participants: [
-    regularNeuro, chatPrompts
+    regularCerber, chatPrompts
   ]
 }
