@@ -38,7 +38,7 @@ const chatPrompts = {
   )
 }
 
-//added this, fingers crossed it doesnt break anything
+// added this, fingers crossed it doesnt break anything
 const cerbathonPrompts = {
   ...cerber.base,
   id: 'cerbathon',

@@ -91,8 +91,8 @@ export const cerbathonPrompts = [
   'cerbathon splash animation more than once',
   'cerber fact of the day',
   'cerber can\'t decide what to do',
-  '\"your timer is broken, it\'s only going up\"',
-  //'bingo metagaming' <- this one is kinda unclear & rare so idk
+  '"your timer is broken, it\'s only going up"',
+  // 'bingo metagaming' <- this one is kinda unclear & rare so idk
   'lore video premiere',
   'just chatting until 2 hour mark',
   'staring contest'
