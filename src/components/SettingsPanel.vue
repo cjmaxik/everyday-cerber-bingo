@@ -87,7 +87,7 @@
                 { label: 'Static', value: 'static' },
                 { label: 'Text', value: 'text' }
               ]"
-              toggle-color="gymbag"
+              toggle-color="purrbert"
             />
           </q-item-section>
         </q-item>
@@ -185,7 +185,7 @@ const clearAll = () => {
   }
 }
 
-const testAudio = new Audio('../assets/sounds/neuro/wink.mp3')
+const testAudio = new Audio('../assets/sounds/cerber/yeah.mp3')
 const testSound = () => {
   if (settings.disableSound) return
 
