@@ -2,7 +2,7 @@
   <q-card>
     <q-toolbar v-show="!isIndex">
       <q-avatar>
-        <img src="/assets/images/gymbag.png">
+        <img src="/icons/android-chrome-192x192.png">
       </q-avatar>
 
       <q-toolbar-title class="text-center">
@@ -30,10 +30,18 @@
             ref="noopener noreferrer"
             href="https://cjmaxik.com?ref=cerber-bingo"
             target="_blank"
-          >CJMAXiK</a> - Lead Developer
+          >CJMAXiK</a> - Developer
         </li>
 
-        <li v-if="!isIndex">
+        <li>
+          <a
+            ref="noopener noreferrer"
+            href="https://www.twitch.tv/unmovablejaveline?ref=cerber-bingo"
+            target="_blank"
+          >VibrationJaveline</a> - Prompt Editor
+        </li>
+
+        <li>
           <a
             ref="noopener noreferrer"
             href="https://github.com/cjmaxik/everyday-cerber-bingo/graphs/contributors?ref=cerber-bingo"
@@ -47,7 +55,11 @@
           ref="noopener noreferrer"
           href="https://github.com/cjmaxik/everyday-cerber-bingo?ref=cerber-bingo"
           target="_blank"
-        >GitHub</a>.
+        >GitHub</a>. Based on <a
+          ref="noopener noreferrer"
+          href="https://github.com/cjmaxik/everyday-neuro-bingo?ref=cerber-bingo"
+          target="_blank"
+        >Everyday Neuro Bingo</a>.
       </p>
 
       <p v-else>
@@ -59,6 +71,11 @@
       </p>
 
       <hr>
+
+      <p class="text-center">
+        <strong>Cerber</strong> (CerberVT) is an independent female English VTuber.<br>
+        She is a cheerful beacon of intense positivity and wholesomeness. As a hellhound, she nicknames everyone with "Wan" in their name and uses it like a verbal tick, such as switching "1" for Wan at every opportunity. She is also welcoming and easily flustered by simple compliments.
+      </p>
 
       <p>
         <q-btn-group spread>
@@ -101,7 +118,7 @@
             href="https://www.tiktok.com/@cerbervt?ref=cerber-bingo"
             label="TikTok"
             no-caps
-            style="background-color: #1DA1F2;"
+            style="background-color: #FE2C55;"
             target="_blank"
             text-color="white"
           />

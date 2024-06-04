@@ -11,9 +11,9 @@ const settings = useGameSettingsStore()
 // watch for font setting changes
 watch(settings, (settings) => {
   if (settings.removeFont) {
-    document.body.classList.remove('neuro-font')
+    document.body.classList.remove('cerber-font')
   } else {
-    document.body.classList.add('neuro-font')
+    document.body.classList.add('cerber-font')
   }
 })
 </script>

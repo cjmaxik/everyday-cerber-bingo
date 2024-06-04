@@ -23,6 +23,14 @@
       <q-card-section>
         <q-item tag="label">
           <q-checkbox
+            v-model="settings.removeFont"
+            keep-color
+            label="Basic font"
+          />
+        </q-item>
+
+        <q-item tag="label">
+          <q-checkbox
             v-model="settings.hideTally"
             :false-value="true"
             keep-color
