@@ -3,7 +3,7 @@ name: New Collab stream board
 about: Adds a new issue for a new Collab stream board
 title: Collab with <NAME> / <DATE>
 labels: prompts
-assignees: cjmaxik, tioopental
+assignees: cjmaxik
 
 ---
 

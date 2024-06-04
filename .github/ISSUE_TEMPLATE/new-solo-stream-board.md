@@ -1,9 +1,9 @@
 ---
-name: New Solo stream board
-about: Adds a new issue for a Solo stream board
+name: New stream board
+about: Adds a new issue for a stream board
 title: "<STREAM NAME> / <DATE>"
 labels: prompts
-assignees: cjmaxik, tioopental
+assignees: cjmaxik
 
 ---
 
