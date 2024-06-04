@@ -1,5 +1,5 @@
 <template>
-  <div class="fullscreen bg-gymbag text-white text-center q-pa-md flex flex-center neuro-font">
+  <div class="fullscreen bg-gymbag text-white text-center q-pa-md flex flex-center cerber-font">
     <div>
       <div style="font-size: 30vh">
         404
@@ -17,7 +17,7 @@
         color="white"
         label="Go Home"
         no-caps
-        text-color="gymbag"
+        text-color="purrbert"
         to="/"
         unelevated
       />

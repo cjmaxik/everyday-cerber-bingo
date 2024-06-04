@@ -129,14 +129,19 @@ export const getRandomInt = (min, max) => {
  * @param {number} version
  * @returns {string} Seed phrase
  */
-export const generateBrowserSeed = (version) => ''.concat(
-  version.toString(),
-  new Date().getUTCFullYear().toString(),
-  new Date().getUTCMonth().toString(),
-  new Date().getUTCDate().toString(),
-  window.navigator?.languages.toString() ?? 'en-US',
-  window.navigator?.userAgent ?? 'The Swarm'
-).replaceAll(/[^a-zA-Z0-9]+/g, '')
+export const generateBrowserSeed = (version) => {
+  const now = new Date()
+  now.setUTCHours(15, 30, 0, 0)
+
+  return ''.concat(
+    version.toString(),
+    now.getUTCFullYear().toString(),
+    now.getUTCMonth().toString(),
+    now.getUTCDate().toString(),
+    window.navigator?.languages.toString() ?? 'en-US',
+    window.navigator?.userAgent ?? 'Minawan'
+  ).replaceAll(/[^a-zA-Z0-9]+/g, '')
+}
 
 /**
  * Return a value from the path in an object
@@ -158,7 +163,7 @@ export const routeNorm = (path) =>
  */
 export const winningLines = {
   small: [
-  // rows
+    // rows
     [0, 1, 2, 3, 4],
     [5, 6, 7, 8, 9],
     [10, 11, 12, 13, 14],
@@ -178,7 +183,7 @@ export const winningLines = {
   ],
 
   big: [
-  // rows
+    // rows
     [0, 1, 2, 3, 4, 5, 6],
     [7, 8, 9, 10, 11, 12, 13],
     [14, 15, 16, 17, 18, 19, 20],
