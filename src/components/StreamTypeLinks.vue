@@ -5,7 +5,7 @@
     icon="keyboard_arrow_left"
     padding="xs"
     style="height: 100%; z-index:999;"
-    text-color="gymbag"
+    text-color="purrbert"
     @click="$emit('returnToSelection')"
   />
 
@@ -26,7 +26,7 @@
         :key="name"
         expand-icon-class="collab-toggle"
         group="collab"
-        header-class="text-gymbag text-h6"
+        header-class="text-purrbert text-h6"
         :label="name"
         toggle
       >

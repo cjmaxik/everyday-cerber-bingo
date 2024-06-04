@@ -1,5 +1,5 @@
 <template>
-  <div class="fullscreen bg-gymbag text-white text-center q-pa-md flex flex-center cerber-font">
+  <div class="fullscreen bg-purrbert text-white text-center q-pa-md flex flex-center cerber-font">
     <div>
       <div style="font-size: 30vh">
         404

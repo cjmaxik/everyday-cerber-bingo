@@ -1,6 +1,6 @@
 <template>
   <q-header elevated>
-    <q-toolbar class="bg-gymbag">
+    <q-toolbar class="bg-purrbert">
       <q-btn
         flat
         no-caps
@@ -28,7 +28,7 @@
           color="white"
           :ripple="false"
           style="user-select: none;"
-          text-color="gymbag"
+          text-color="purrbert"
         >
           {{ realStreamName }}
         </q-chip>
@@ -48,7 +48,7 @@
         >
           <q-tooltip
             anchor="bottom left"
-            class="text-body2 bg-gymbag"
+            class="text-body2 bg-purrbert"
           >
             Fullscreen board
           </q-tooltip>

@@ -17,10 +17,10 @@
           <div class="text-center q-pa-xs">
             <img
               alt="Loading..."
-              src="/assets/images/gymbag.png"
+              src="/assets/images/cerb.gif"
             >
 
-            <h2 class="text-gymbag no-margin">
+            <h2 class="text-white no-margin">
               Stay tuned...
             </h2>
           </div>
@@ -29,7 +29,7 @@
 
       <q-banner
         v-if="error"
-        class="text-white bg-gymbag"
+        class="text-white bg-purrbert"
       >
         <template #avatar>
           <q-avatar square>
@@ -67,7 +67,7 @@
             v-if="block.free"
             class="bingo-block free row justify-center items-end"
             :class="{ win: block.win }"
-            :style="{ backgroundImage: `url(${state.freeBlockImage ?? '/assets/images/gymbag.png'})` }"
+            :style="{ backgroundImage: `url(${state.freeBlockImage ?? '/assets/images/purrbert.png'})` }"
           >
             {{ forcedSeed ? state.seed : '' }}
           </div>
@@ -243,7 +243,7 @@ onBeforeMount(() => {
       const participant = state.participants[id]
       style.innerHTML += `
       .${participant.id}-block {
-        --tally-image: url(${participant.image ?? '/assets/images/gymbag.png'});
+        --tally-image: url(${participant.image ?? '/assets/images/purrbert.png'});
         --text-color: ${participant.color ?? '#000'};
       }
     `
@@ -331,7 +331,7 @@ const notifyForUndo = (block) => {
     message: 'Made a mistake?',
     progress: true,
     group: false,
-    color: 'gymbag',
+    color: 'purrbert',
     timeout: 10000,
     position: 'bottom-right',
     actions: [

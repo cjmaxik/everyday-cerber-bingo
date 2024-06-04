@@ -9,7 +9,7 @@
   >
     <q-tooltip
       anchor="bottom left"
-      class="text-body2 bg-gymbag"
+      class="text-body2 bg-purrbert"
     >
       Settings
     </q-tooltip>

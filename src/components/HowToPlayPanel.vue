@@ -2,7 +2,7 @@
   <q-card>
     <q-card-section>
       <p>
-        Examine the board before the stream. It has 25 or 48 randomly generated prompts that we expect <span class="text-gymbag text-bold">Cerber</span>, chat or her partners to say, do, or mention. Once they do, click on the appropriate prompt to mark it out. Mind the color of the prompts: collab streams have separate prompts for each partner. <strong>Bingo</strong> is complete when all seven prompts in the vertical, horizontal, or diagonal row are marked out. The center prompt is free, by the way. The board will update every day at 15:30 UTC.
+        Examine the board before the stream. It has 25 or 48 randomly generated prompts that we expect <span class="text-purrbert text-bold">Cerber</span>, chat or her partners to say, do, or mention. Once they do, click on the appropriate prompt to mark it out. Mind the color of the prompts: collab streams have separate prompts for each partner. <strong>Bingo</strong> is complete when all seven prompts in the vertical, horizontal, or diagonal row are marked out. The center prompt is free, by the way. The board will update every day at 15:30 UTC.
       </p>
 
       <p>

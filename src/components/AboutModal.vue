@@ -73,7 +73,7 @@
       <hr>
 
       <p class="text-center">
-        <strong>Cerber</strong> (CerberVT) is an independent female English VTuber.<br>
+        <span class="text-weight-bold">Cerber</span> (CerberVT) is an independent female English VTuber.<br>
         She is a cheerful beacon of intense positivity and wholesomeness. As a hellhound, she nicknames everyone with "Wan" in their name and uses it like a verbal tick, such as switching "1" for Wan at every opportunity. She is also welcoming and easily flustered by simple compliments.
       </p>
 

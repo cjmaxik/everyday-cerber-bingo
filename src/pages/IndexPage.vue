@@ -31,7 +31,7 @@
         :name="1"
         title="Select character"
       >
-        <div class="text-h5 q-my-sm text-center text-gymbag">
+        <div class="text-h5 q-my-sm text-center text-purrbert">
           Select character
         </div>
 

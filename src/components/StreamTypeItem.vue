@@ -14,7 +14,7 @@
       </q-item-label>
 
       <q-item-label
-        :class="{ 'text-gymbag': !color }"
+        :class="{ 'text-purrbert': !color }"
         :style="{ color }"
       >
         {{ text }}
