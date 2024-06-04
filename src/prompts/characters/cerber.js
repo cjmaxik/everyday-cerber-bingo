@@ -9,7 +9,7 @@ export const base = {
   assetsFolder: 'cerber',
 
   // tally background image
-  image: 'smug.png',
+  image: 'cerby.png',
 
   // tally sounds, will be chosen at random
   sounds: [
@@ -61,7 +61,7 @@ export const chatPrompts = [
 
 export const redeemPrompts = [
   // redeem related, turn off for a capitalism-free experience
-  'thigs redeem',
+  'thighs redeem',
   'licks during kith',
   'duck???',
   'confetti storm',

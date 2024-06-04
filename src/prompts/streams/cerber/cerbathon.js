@@ -40,7 +40,7 @@ const chatPrompts = {
 
 export default {
   name: 'Cerbathon',
-  image: 'cerber/36percent.png',
+  image: 'cerber/random/{x}.png',
   participants: [
     regularCerber, chatPrompts, redeemPrompts
   ]

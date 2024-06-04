@@ -3,7 +3,7 @@ export const base = {
   name: 'Chat',
   color: '#7f59b6',
   assetsFolder: 'chat',
-  image: 'chatting.png',
+  image: 'minawan.png',
   sounds: [
     'generic.mp3'
   ]
