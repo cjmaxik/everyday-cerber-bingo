@@ -18,6 +18,7 @@ export default {
    * Test boards
    */
   dev: {
-    emoteTest: () => import('streams/tests/emote')
+    emoteTest: () => import('streams/tests/emote'),
+    poster: () => import('streams/tests/poster')
   }
 }
