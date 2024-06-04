@@ -9,7 +9,7 @@ New Bingo card for CerberVT every day! Watch Cerber's streams and follow along.
 - [**CJMAXiK**](https://cjmaxik.com?ref=cerber-bingo) - Developer
 - [**VibrationJaveline**](https://www.twitch.tv/unmovablejaveline?ref=cerber-bingo) - Prompt Editor
 
-Based on Everyday Neuro Bingo - [https://github.com/cjmaxik/everyday-cerber-bingo](https://github.com/cjmaxik/everyday-cerber-bingo)
+Based on Everyday Neuro Bingo - [https://github.com/cjmaxik/everyday-neuro-bingo](https://github.com/cjmaxik/everyday-neuro-bingo)
 
 ### Special thanks
 
