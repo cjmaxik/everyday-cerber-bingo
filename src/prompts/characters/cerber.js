@@ -34,6 +34,7 @@ export const regularPrompts = [
   'appreciating (not\xa0MILM)',
   '36% moment',
   'says "yippee" unprompted',
+  'animal noises other than dog ones',
 
   // cerber gaming
   'forgets to actually play the game',
@@ -51,12 +52,14 @@ export const mentionPrompts = [
   'Man I Love Minawan',
   'struggles to come up with a minawan name',
   'asks if someone didn\'t AWOO',
-  'greggs mention'
+  'greggs mention',
+  'catber / purrbert mention'
 ]
 
 export const chatPrompts = [
   // chat related
   'chat spams :PETTHEMODS:',
+  'chat spams WHERE IS CERBER :PANIC:',
   'chat tells a GOODWAN joke',
   'wholesome chat moment'
 ]
@@ -90,7 +93,7 @@ export const cerbathonPrompts = [
   'stream ends, timer has increased since start',
   'cerbathon splash animation more than once',
   'cerber fact of the\xa0day',
-  'cerber can\'t decide what to do',
+  'can\'t decide what to do',
   '"your timer is broken, it\'s only going up"',
   // 'bingo metagaming' <- this one is kinda unclear & rare so idk
   'lore video premiere',
