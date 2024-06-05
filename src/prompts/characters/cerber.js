@@ -33,6 +33,7 @@ export const regularPrompts = [
   'mods have to remind about redeems',
   'appreciating (not\xa0MILM)',
   '36% moment',
+  'says "yippee" unprompted',
 
   // cerber gaming
   'forgets to actually play the game',
@@ -48,8 +49,9 @@ export const regularPrompts = [
 export const mentionPrompts = [
   'says "I\'m a hellhound"',
   'Man I Love Minawan',
-  'struggles to come up with the name',
-  'asks if someone didn\'t AWOO'
+  'struggles to come up with a minawan name',
+  'asks if someone didn\'t AWOO',
+  'greggs mention'
 ]
 
 export const chatPrompts = [
@@ -70,7 +72,9 @@ export const redeemPrompts = [
   'put in jail',
   'ara ara redeem',
   'AWOOOO redeem',
-  'hydrate redeem'
+  'hydrate redeem',
+  'tangia spam',
+  'dance party!'
 ]
 
 export const rareRedeemPrompts = [
@@ -79,6 +83,19 @@ export const rareRedeemPrompts = [
   'minawan eaten',
   'eats a treat',
   'stretch redeem'
+]
+
+export const cerbathonPrompts = [
+  // cerbathon specific
+  'stream ends, timer has increased since start',
+  'cerbathon splash animation more than once',
+  'cerber fact of the\xa0day',
+  'cerber can\'t decide what to do',
+  '"your timer is broken, it\'s only going up"',
+  // 'bingo metagaming' <- this one is kinda unclear & rare so idk
+  'lore video premiere',
+  'just chatting until 2\xa0hour mark',
+  'staring contest'
 ]
 
 /* Only applies for collabs

@@ -38,10 +38,21 @@ const chatPrompts = {
   )
 }
 
+// added this, fingers crossed it doesnt break anything
+const cerbathonPrompts = {
+  ...cerber.base,
+  id: 'cerbathon',
+  name: 'Cerbathon',
+
+  prompts: mergeUnique(
+    ...cerber.cerbathonPrompts
+  )
+}
+
 export default {
   name: 'Cerbathon',
   image: 'cerber/random/{x}.png',
   participants: [
-    regularCerber, chatPrompts, redeemPrompts
+    regularCerber, chatPrompts, redeemPrompts, cerbathonPrompts
   ]
 }
