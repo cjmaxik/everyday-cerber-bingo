@@ -13,7 +13,11 @@ export const base = {
 
   // tally sounds, will be chosen at random
   sounds: [
-    'yeah.mp3'
+    'yeah.mp3',
+    'ara-ara.mp3',
+    'garggle.mp3',
+    'bah.mp3',
+    'tequila.mp3'
   ]
 }
 
