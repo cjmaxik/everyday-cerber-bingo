@@ -29,7 +29,7 @@ export const regularPrompts = [
   '"no, minawan! stop!"',
   'asks minawan for help',
   'says hi to a bunch of people',
-  'cerber of the\xa0day',
+  // 'cerber of the\xa0day',
   'mods have to remind about redeems',
   'appreciating (not\xa0MILM)',
   '36% moment',
