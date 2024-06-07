@@ -113,16 +113,23 @@ export const transposeForBoard = (array) => {
 }
 
 /**
- * Returns a random number (inslusive)
+ * Returns a random number (inslusive).
+ * If `lastInt` is provided, it will be ignored
  * @param {number} min Min value
  * @param {number} max Max value
+ * @param {number} [lastInt=null] Last generated number
  * @returns {number}
  */
-export const getRandomInt = (min, max) => {
+export const getRandomInt = (min, max, lastInt = null) => {
   min = Math.ceil(min)
   max = Math.floor(max)
 
-  return Math.floor(Math.random() * (max - min + 1) + min)
+  let randomInt
+  do {
+    randomInt = Math.floor(Math.random() * (max - min + 1) + min)
+  } while (randomInt === lastInt)
+
+  return randomInt
 }
 
 /**

@@ -279,13 +279,13 @@ const decrement = (block) => {
   checkForWin(block, true)
 }
 
-const soundsPath = '../assets/sounds'
-const winSound = new Audio(`${soundsPath}/vine-boom.mp3`)
+const winSound = new Audio('../assets/sounds/vine-boom.mp3')
+let lastRandomId = -1
 
 /**
  * Check for winning state
  * @param {Types.BoardBlock} block
- * @param {?boolean} [decrement=false]
+ * @param {boolean} [decrement=false]
  */
 const checkForWin = (block, decrement = false) => {
   const index = block.index
@@ -295,15 +295,18 @@ const checkForWin = (block, decrement = false) => {
   const win = state.checkForBingo()
   const isSoundActive = !settings.disableSound && !decrement && (settings.volume !== 0)
 
-  if (win.length && win.length !== state.previousWin) {
-    playSound(winSound, settings.volume, isSoundActive)
+  let soundToPlay = null
+  if (win?.length !== state.previousWin) {
+    soundToPlay = winSound
   } else {
     if (state.getTally(index) === 1) {
-      const randomSound = sounds[getRandomInt(0, sounds.length - 1)]
-      playSound(randomSound, settings.volume, isSoundActive)
+      const randomId = getRandomInt(0, sounds.length - 1, lastRandomId)
+      soundToPlay = sounds[randomId]
+      lastRandomId = randomId
     }
   }
 
+  if (soundToPlay) playSound(soundToPlay, settings.volume, isSoundActive)
   state.previousWin = win.length
 }
 
