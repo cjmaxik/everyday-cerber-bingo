@@ -300,7 +300,7 @@ const checkForWin = (block, decrement = false) => {
     soundToPlay = winSound
   } else {
     if (state.getTally(index) === 1) {
-      const randomId = getRandomInt(0, sounds.length - 1, lastRandomId)
+      const randomId = getRandomInt(0, sounds.length - 1, sounds.length > 1 ? lastRandomId : null)
       soundToPlay = sounds[randomId]
       lastRandomId = randomId
     }
