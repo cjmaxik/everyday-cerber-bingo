@@ -1,6 +1,4 @@
 // @ts-check
-// eslint-disable-next-line no-unused-vars
-import * as Types from 'helpers/types.d'
 
 // vue-related
 import { defineStore, acceptHMRUpdate } from 'pinia'
@@ -9,7 +7,7 @@ const preferredMotion = usePreferredReducedMotion()
 
 /**
  * Generates the game settings store
- * @returns {import('pinia').Store<Types.GameSettingsStore, Object, Object>}
+ * @returns {import('pinia').Store<import('types.d.js').GameSettingsStore, Object, Object>}
  */
 export const useGameSettingsStore = defineStore('gameSettings', {
   state: () => ({

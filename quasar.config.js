@@ -8,10 +8,10 @@
 // Configuration for your app
 // https://v2.quasar.dev/quasar-cli-vite/quasar-config-js
 
-const { configure } = require('quasar/wrappers')
-const path = require('path')
+import { configure } from 'quasar/wrappers'
+import path from 'path'
 
-module.exports = configure(function (/* ctx */) {
+export default configure((ctx) => {
   return {
     eslint: {
       fix: true,
@@ -56,8 +56,8 @@ module.exports = configure(function (/* ctx */) {
     // Full list of options: https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#build
     build: {
       target: {
-        browser: ['es2019', 'edge88', 'firefox78', 'chrome87', 'safari13.1'],
-        node: 'node18'
+        browser: ['es2022', 'firefox115', 'chrome115', 'safari14'],
+        node: 'node20'
       },
 
       vueRouterMode: 'history', // available values: 'hash', 'history'
@@ -88,7 +88,13 @@ module.exports = configure(function (/* ctx */) {
         helpers: path.join(__dirname, './src/helpers')
       },
 
-      vitePlugins: []
+      vitePlugins: [
+        ['vite-plugin-checker', {
+          eslint: {
+            lintCommand: 'eslint "./**/*.{js,mjs,cjs,vue}"'
+          }
+        }, { server: false }]
+      ]
     },
 
     // Full list of options: https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#devServer

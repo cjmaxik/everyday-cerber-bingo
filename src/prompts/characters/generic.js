@@ -1,3 +1,4 @@
+// @ts-check
 // Use only when you don't have identity for the character
 
 export default {

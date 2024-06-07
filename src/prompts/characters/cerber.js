@@ -1,3 +1,5 @@
+// @ts-check
+
 export const base = {
   id: 'cerber',
   name: 'Cerber',
@@ -58,7 +60,7 @@ export const mentionPrompts = [
   'struggles to come up with a minawan name',
   'asks if someone didn\'t AWOO',
   'greggs mention',
-  'catber / purrbert mention'
+  'catber/purrbert mention'
 ]
 
 export const chatPrompts = [

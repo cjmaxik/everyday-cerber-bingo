@@ -23,4 +23,8 @@
   "html.format.wrapAttributes": "force-expand-multiline",
   "html.format.indentInnerHtml": false,
   "eslint.format.enable": true,
+  "vue.format.script.initialIndent": false,
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": false,
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+  "javascript.referencesCodeLens.enabled": true,
 }

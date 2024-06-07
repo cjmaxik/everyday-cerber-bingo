@@ -76,7 +76,7 @@
 
 // vue related
 import { ref, watch } from 'vue'
-import { useQuasar } from 'quasar'
+import { AppFullscreen } from 'quasar'
 
 // project-related
 import SettingsPanel from './SettingsPanel.vue'
@@ -95,9 +95,7 @@ watch(settings, (settings) => {
 })
 
 // fullscreen stuff
-const $q = useQuasar()
-
 const goFullscreen = () => {
-  $q.fullscreen.toggle(document.querySelector('div.bingo-card'))
+  AppFullscreen.toggle(document.querySelector('div.bingo-card'))
 }
 </script>

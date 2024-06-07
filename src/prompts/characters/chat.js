@@ -1,3 +1,5 @@
+// @ts-check
+
 export const base = {
   id: 'chat',
   name: 'Chat',

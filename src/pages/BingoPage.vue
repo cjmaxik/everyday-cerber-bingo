@@ -55,7 +55,7 @@
         :key="1"
         class="bingo-card shadow-5"
         :class="[
-          { fullscreen: $q.fullscreen.isActive },
+          { fullscreen: AppFullscreen.isActive },
           state.big ? 'big' : 'small'
         ]"
       >
@@ -118,7 +118,7 @@
         </div>
 
         <q-space />
-        <div v-show="$q.platform.is.desktop">
+        <div v-show="Platform.is.desktop">
           Hint: Ctrl+Click to undo the tally
         </div>
       </div>
@@ -159,13 +159,11 @@
 
 <script setup>
 // @ts-check
-// eslint-disable-next-line no-unused-vars
-import * as Types from 'helpers/types.d'
 console.groupEnd()
 
 // vue-related
 import { ref, onBeforeMount, onBeforeUnmount } from 'vue'
-import { useQuasar } from 'quasar'
+import { AppFullscreen, Platform, Notify } from 'quasar'
 import { useRoute } from 'vue-router'
 const route = useRoute()
 
@@ -197,9 +195,6 @@ if (streamData === undefined) location.replace('/404')
 
 const state = useGameStateStore(streamType)
 const settings = useGameSettingsStore()
-
-// Quasar object
-const $q = useQuasar()
 
 // Init data
 const version = 5
@@ -260,7 +255,7 @@ onBeforeUnmount(() => {
 
 /**
  * Increment the tally
- * @param {Types.BoardBlock} block
+ * @param {import('types.d.js').BoardBlock} block
  */
 const increment = (block) => {
   const hasUpdated = state.increment(block.index, settings.hideTally)
@@ -272,7 +267,7 @@ const increment = (block) => {
 
 /**
  * Decrement the tally
- * @param {Types.BoardBlock} block
+ * @param {import('types.d.js').BoardBlock} block
  */
 const decrement = (block) => {
   state.decrement(block.index)
@@ -284,7 +279,7 @@ let lastRandomId = -1
 
 /**
  * Check for winning state
- * @param {Types.BoardBlock} block
+ * @param {import('types.d.js').BoardBlock} block
  * @param {boolean} [decrement=false]
  */
 const checkForWin = (block, decrement = false) => {
@@ -327,10 +322,10 @@ const playSound = (audio, volume, isActive) => {
 
 /**
  * Undo logic for the toast notification)
- * @param {Types.BoardBlock} block
+ * @param {import('types.d.js').BoardBlock} block
  */
 const notifyForUndo = (block) => {
-  $q.notify({
+  Notify.create({
     message: 'Made a mistake?',
     progress: true,
     group: false,

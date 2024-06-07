@@ -1,9 +1,11 @@
+// @ts-check
+
 /**
  * Use this board for a web poster screenshots
  * Available ONLY via direct link (see `prompts.js`)
  */
 
-import * as cerber from 'characters/cerber'
+import * as cerber from 'characters/cerber.js'
 
 const youWinPrompts = {
   ...cerber.base,

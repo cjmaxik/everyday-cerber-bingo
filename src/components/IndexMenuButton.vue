@@ -20,6 +20,8 @@
 </template>
 
 <script setup>
+// @ts-check
+
 defineProps({
   id: {
     type: String,

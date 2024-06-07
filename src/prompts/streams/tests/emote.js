@@ -1,9 +1,11 @@
+// @ts-check
+
 /**
  * Use this board to test emotes and settings
  * Available ONLY via direct link (see `prompts.js`)
  */
 
-import * as chat from 'characters/chat'
+import * as chat from 'characters/chat.js'
 
 const emoteTest = {
   ...chat.base,

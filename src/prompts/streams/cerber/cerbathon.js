@@ -1,7 +1,9 @@
-import { mergeUnique } from 'src/helpers/helpers'
+// @ts-check
 
-import * as cerber from 'characters/cerber'
-import * as chat from 'characters/chat'
+import { mergeUnique } from 'src/helpers/helpers.js'
+
+import * as cerber from 'characters/cerber.js'
+import * as chat from 'characters/chat.js'
 
 const regularCerber = {
   ...cerber.base,

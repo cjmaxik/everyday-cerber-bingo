@@ -1,6 +1,4 @@
 // @ts-check
-// eslint-disable-next-line no-unused-vars
-import * as Types from 'helpers/types.d'
 
 // vue-related
 import { defineStore, acceptHMRUpdate } from 'pinia'
@@ -13,12 +11,12 @@ import {
   deepCopy,
   winningLines,
   generateBrowserSeed
-} from 'helpers/helpers'
+} from 'helpers/helpers.js'
 
 /**
  * Generates the game state store
  * @param {string} id Store ID
- * @returns {import('pinia').Store<string, Types.GameStateStore, Object, Object>}
+ * @returns {import('pinia').Store<string, import('types.d.js').GameStateStore, Object, Object>}
  */
 export const useGameStateStore = (id) => defineStore(`gameState-${id}`, {
   state: () => ({
@@ -44,7 +42,7 @@ export const useGameStateStore = (id) => defineStore(`gameState-${id}`, {
   },
 
   actions: {
-    clearAll() {
+    clearAll () {
       this.ready = false
 
       this.seed = 0
@@ -55,11 +53,11 @@ export const useGameStateStore = (id) => defineStore(`gameState-${id}`, {
     },
 
     /**
-     * @param {Types.StreamData} streamData Prompts
+     * @param {import('types.d.js').StreamData} streamData Prompts
      * @param {number} version Dataset version
      * @param {number} [forceSeed] Seed to force
     */
-    generateBoard(streamData, version, forceSeed) {
+    generateBoard (streamData, version, forceSeed) {
       console.group('Initializing random seed...')
 
       const seedPhrase = generateBrowserSeed(version)
@@ -153,7 +151,7 @@ export const useGameStateStore = (id) => defineStore(`gameState-${id}`, {
      * @param {number} index
      * @param {boolean} hideTally
      */
-    increment(index, hideTally) {
+    increment (index, hideTally) {
       const currentTally = this.board[index].tally
 
       if (hideTally) {
@@ -169,7 +167,7 @@ export const useGameStateStore = (id) => defineStore(`gameState-${id}`, {
     /**
      * @param {number} index
      */
-    decrement(index) {
+    decrement (index) {
       if (this.board[index].tally <= 1) {
         this.board[index].tally = 0
       } else {
@@ -177,13 +175,14 @@ export const useGameStateStore = (id) => defineStore(`gameState-${id}`, {
       }
     },
 
-    checkForBingo() {
+    checkForBingo () {
       const boardSize = this.big ? 'big' : 'small'
       const blocksWithTally = this.board.filter(x => x.tally).map((x) => x.index)
 
       let winningCombination = winningLines[boardSize].filter(
         winner => winner.every(x => blocksWithTally.includes(x))
       ).flat()
+
       winningCombination = [...new Set(winningCombination)]
 
       this.bingo = winningCombination.length ? winningCombination : []

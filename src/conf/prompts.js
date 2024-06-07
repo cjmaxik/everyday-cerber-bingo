@@ -11,14 +11,14 @@ export default {
    */
   cerber: {
     // Cerbathon
-    cerbathon: () => import('streams/cerber/cerbathon')
+    cerbathon: () => import('streams/cerber/cerbathon.js')
   },
 
   /**
    * Test boards
    */
   dev: {
-    emoteTest: () => import('streams/tests/emote'),
-    poster: () => import('streams/tests/poster')
+    emoteTest: () => import('streams/tests/emote.js'),
+    poster: () => import('streams/tests/poster.js')
   }
 }

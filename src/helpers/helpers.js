@@ -1,8 +1,6 @@
 // @ts-check
-// eslint-disable-next-line no-unused-vars
-import * as Types from 'helpers/types.d'
-import { useLocalStorage } from '@vueuse/core'
 
+import { useLocalStorage } from '@vueuse/core'
 /**
  * Split array into chunks
  * @param {Array} array
@@ -58,17 +56,17 @@ export const deepCopy = (array) => JSON.parse(JSON.stringify(array))
 
 /**
  * Merge arrays and deduplicate entries
- * @param  {...string[]} arrays
+ * @param {string[]} arrays
  * @returns {string[]}
  */
 export const mergeUnique = (...arrays) => [...new Set([].concat(...arrays))]
 
 /**
  * Generate 48 prompts for the board
- * @param {Types.ParticipantData[]} allPrompts
+ * @param {import('types.d.js').ParticipantData[]} allPrompts
  * @param {number} seed
  * @param {number} boardSize
- * @returns {Types.Prompt[]}
+ * @returns {import('types.d.js').Prompt[]}
  */
 export const generatePrompts = (allPrompts, seed, boardSize) => {
   const participantsCount = allPrompts.length

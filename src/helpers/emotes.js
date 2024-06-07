@@ -1,6 +1,5 @@
 // @ts-check
 // eslint-disable-next-line no-unused-vars
-import * as Types from 'helpers/types.d'
 
 // see `./emotes.md` for details
 import emotes from './emotesList.json'
@@ -9,7 +8,7 @@ const assetsURL = '/assets/images/emotes'
 /**
  * Generate an emote object with URLs from the list
  * @param {string} name Emote name
- * @returns {?Types.Emote} Emote object or null
+ * @returns {import('types.d.js').Emote} Emote object or null
  */
 export const generateEmote = (name) => {
   const emoteId = emotes[name]

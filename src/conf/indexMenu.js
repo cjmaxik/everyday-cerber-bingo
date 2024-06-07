@@ -1,10 +1,8 @@
 // @ts-check
-// eslint-disable-next-line no-unused-vars
-import * as Types from 'helpers/types.d'
 
 /**
  * Upcoming stream
- * @type {Types.StreamMenuData}
+ * @type {import('types.d.js').StreamMenuData}
  */
 export const upcoming = null
 // export const upcoming = {
@@ -16,7 +14,7 @@ export const upcoming = null
 
 /**
  * Menu structure
- * @type {Types.IndexMenu}
+ * @type {import('types.d.js').IndexMenu}
  */
 export const indexMenu = {
   cerber: {
