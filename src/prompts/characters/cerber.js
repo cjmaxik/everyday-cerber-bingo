@@ -13,7 +13,12 @@ export const base = {
 
   // tally sounds, will be chosen at random
   sounds: [
-    'yeah.mp3'
+    'yeah.mp3',
+    'ara-ara.mp3',
+    'garggle.mp3',
+    'bah.mp3',
+    'tequila.mp3',
+    'short_awoo.mp3'
   ]
 }
 
@@ -29,11 +34,12 @@ export const regularPrompts = [
   '"no, minawan! stop!"',
   'asks minawan for help',
   'says hi to a bunch of people',
-  'cerber of the\xa0day',
+  // 'cerber of the\xa0day',
   'mods have to remind about redeems',
   'appreciating (not\xa0MILM)',
   '36% moment',
   'says "yippee" unprompted',
+  'animal noises other than dog ones',
 
   // cerber gaming
   'forgets to actually play the game',
@@ -54,13 +60,14 @@ export const mentionPrompts = [
   'struggles to come up with a minawan name',
   'asks if someone didn\'t AWOO',
   'greggs mention',
-  'purrbert mention',
-  'slugber mention (RIP)'
+  'slugber mention (RIP)',
+  'catber / purrbert mention'
 ]
 
 export const chatPrompts = [
   // chat related
   'chat spams :PETTHEMODS:',
+  'chat spams WHERE IS CERBER :PANIC:',
   'chat tells a GOODWAN joke',
   'wholesome chat moment'
 ]
@@ -95,7 +102,7 @@ export const cerbathonPrompts = [
   'stream ends, timer has increased since start',
   'cerbathon splash animation more than once',
   'cerber fact of the\xa0day',
-  'cerber can\'t decide what to do',
+  'can\'t decide what to do',
   '"your timer is broken, it\'s only going up"',
   // 'bingo metagaming' <- this one is kinda unclear & rare so idk
   'lore video premiere',
