@@ -78,7 +78,8 @@ export const redeemPrompts = [
   'AWOOOO redeem',
   'hydrate redeem',
   'tangia spam',
-  'dance party!'
+  'dance party!',
+  'redeem breaks'
 ]
 
 export const rareRedeemPrompts = [
