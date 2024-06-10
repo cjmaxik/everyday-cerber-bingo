@@ -42,7 +42,9 @@ export const regularPrompts = [
   'sings "Mogu\xa0Mogu"',
   'forgets song lyrics',
   'sings Happy Birthday',
-  '"one more song!" but sings more'
+  '"one more song!" but sings more',
+
+  'activity interrupted by lv10+ hype train'
 ]
 
 // Any stuff berber can mention prompted or unprompted
@@ -51,7 +53,9 @@ export const mentionPrompts = [
   'Man I Love Minawan',
   'struggles to come up with a minawan name',
   'asks if someone didn\'t AWOO',
-  'greggs mention'
+  'greggs mention',
+  'purrbert mention',
+  'slugber mention (RIP)'
 ]
 
 export const chatPrompts = [
@@ -95,7 +99,8 @@ export const cerbathonPrompts = [
   // 'bingo metagaming' <- this one is kinda unclear & rare so idk
   'lore video premiere',
   'just chatting until 2\xa0hour mark',
-  'staring contest'
+  'staring contest',
+  'someone gifts 100 subs'
 ]
 
 /* Only applies for collabs
