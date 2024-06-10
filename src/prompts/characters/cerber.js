@@ -84,6 +84,7 @@ export const redeemPrompts = [
   'ara ara redeem',
   'AWOOOO redeem',
   'hydrate redeem',
+  'eats a treat',
   'tangia spam',
   'dance party!',
   'redeem breaks'
@@ -93,7 +94,6 @@ export const rareRedeemPrompts = [
   // redeem related, legacy redeems / redeems that are very rarely on
   'chmeese',
   'minawan eaten',
-  'eats a treat',
   'stretch redeem'
 ]
 
