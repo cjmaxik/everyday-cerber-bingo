@@ -48,7 +48,9 @@ export const regularPrompts = [
   'sings "Mogu\xa0Mogu"',
   'forgets song lyrics',
   'sings Happy Birthday',
-  '"one more song!" but sings more'
+  '"one more song!" but sings more',
+
+  'activity interrupted by lv10+ hype train'
 ]
 
 // Any stuff berber can mention prompted or unprompted
@@ -58,6 +60,7 @@ export const mentionPrompts = [
   'struggles to come up with a minawan name',
   'asks if someone didn\'t AWOO',
   'greggs mention',
+  'slugber mention (RIP)',
   'catber / purrbert mention'
 ]
 
@@ -81,15 +84,16 @@ export const redeemPrompts = [
   'ara ara redeem',
   'AWOOOO redeem',
   'hydrate redeem',
+  'eats a treat',
   'tangia spam',
-  'dance party!'
+  'dance party!',
+  'redeem breaks'
 ]
 
 export const rareRedeemPrompts = [
   // redeem related, legacy redeems / redeems that are very rarely on
   'chmeese',
   'minawan eaten',
-  'eats a treat',
   'stretch redeem'
 ]
 
@@ -103,7 +107,8 @@ export const cerbathonPrompts = [
   // 'bingo metagaming' <- this one is kinda unclear & rare so idk
   'lore video premiere',
   'just chatting until 2\xa0hour mark',
-  'staring contest'
+  'staring contest',
+  'someone gifts 100 subs'
 ]
 
 /* Only applies for collabs
