@@ -102,7 +102,7 @@ export const cerbathonPrompts = [
   'lore video premiere',
   'lore video plays more than once in 10 minutes',
   'just chatting until 2\xa0hour mark',
-  'staring contest',
+  // 'staring contest',
   'someone gifts 100 subs'
 ]
 
