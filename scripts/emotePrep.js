@@ -1,102 +1,105 @@
 // @ts-check
 const fs = require('fs')
 const path = require('path')
-const axios = require('axios').default
 
-const emotes = require('../src/helpers/emotesList.json')
-const assetsPath = path.resolve(__dirname, '../public/assets/images/emotes')
-const apiUrl = 'https://wsrv.nl/?url=cdn.7tv.app/emote'
+const assetsPath = path.resolve(__dirname, '../src/helpers/emotesList.json')
+const apiUrl = 'https://7tv.io/v3/emote-sets/661eb372740d0db81544b867'
 
 /**
- * Download emote by name
- * @param {string} name
- * @param {boolean} printUrl
+ * Typical workflow:
+ * 1. Add `staticEmoteOverrides`.
+ * 2. Add `removeEmotes`.
+ * 3. Run `npm run emotePrep`
  */
-const downloadEmote = (name, printUrl = false) => {
-  let emoteId = emotes[name]
-  if (!emoteId) return null
 
-  let page = -1
-  if (emoteId.includes('_')) {
-    const emoteWithPage = emoteId.split('_')
-
-    emoteId = emoteWithPage[0]
-    page = emoteWithPage[1]
-  }
-
-  const url = `${apiUrl}/${emoteId}/1x.webp`
-
-  const urls = {
-    animated: `${url}&n=-1`,
-    static: `${url}&page=${page}`
-  }
-
-  for (const emoteType in urls) {
-    const typeName = emoteType.substring(0, 1)
-    const fileName = `${name}_${typeName}.webp`
-
-    if (printUrl) {
-      console.log(`Link to the ${name} ${emoteType} emote: ${urls[emoteType]}`)
-    }
-
-    downloadFile(
-      fileName,
-      urls[emoteType],
-      path.resolve(__dirname, assetsPath, fileName)
-    )
-  }
+/**
+ * STATIC EMOTE OVERRIDE:
+ * Use this if the first frame of the animation does not quite represent the emote.
+ * You can test if the override works well by using the `/dev/emoteTest` board.
+ * Use Frames feature on `ezgif.com` to get the list of frames (frame number - 1).
+*/
+const staticEmoteOverrides = {
+  AWOO: 47,
+  catKISS: 35,
+  cerberLore: 149,
+  cerberPuddle: 170,
+  docnotL: 22,
+  FlowerCatJAM: 42,
+  freddyPls: 146,
+  GOODWAN: 11,
+  Listening: 105,
+  NO: 23,
+  PANIC: 11,
+  pogs: 42,
+  YES: 24,
+  NOWAYING: 25
 }
 
 /**
- * Download and save emote file to disk
- * @param {string} fileName
- * @param {string} fileUrl
- * @param {string} downloadPath
+ * REMOVE EMOTES:
+ * Use this if you want to filter emotes from the list.
  */
-const downloadFile = async (fileName, fileUrl, downloadPath) => {
-  try {
-    const response = await axios({
-      method: 'GET',
-      url: fileUrl,
-      responseType: 'stream'
-    })
+const filterList = [
+  // the filename cannot have `:`
+  ':0',
 
-    const w = response.data.pipe(fs.createWriteStream(downloadPath))
-    w.on('finish', () => {
-      console.log(`Successfully downloaded file - ${fileName}`)
-    })
-  } catch (err) {
-    throw new Error(err)
-  }
-}
+  // too much frames
+  'Dance',
+  'TIMER',
 
-/**
- * Main function
- */
+  // already have an applicable emote
+  'ASSEMBLE',
+  'dejj',
+  'GIGACHAD',
+  'happie',
+  'peepoShy',
+  'SCATTER',
+  'Yesyes',
+
+  // not needed
+  '4Evil',
+  'catPls',
+  'cerberChmeese',
+  'cerberOnline',
+  'FLASHBANG',
+  'GroupStripp',
+  'LUBBERS',
+  'lurkk',
+  'minaSquish',
+  'MyHonestReaction',
+  'ohCry',
+  'okak',
+  'OMEGALUL',
+  'ono',
+  'poggcrazy',
+  'sajj',
+  'sitt',
+  'Smelly',
+  'stripp',
+  'YIPPIE'
+]
+
 const main = async () => {
-  const emoteToUpdate = process.argv[2] ?? null
+  const response = await fetch(apiUrl)
+  const data = await response.json()
 
-  // remove all emotes from the `assetsPath` folder (if any)
-  if (!emoteToUpdate) {
-    fs.readdir(assetsPath, (err, files) => {
-      if (err) throw err
+  const emotes = data.emotes
+    .filter((item) => !filterList.includes(item.name))
+    .sort((a, b) => a.name.localeCompare(b.name))
 
-      for (const file of files) {
-        fs.unlink(path.join(assetsPath, file), (err) => {
-          if (err) throw err
-        })
-      }
-    })
-  }
-
-  // download again
-  if (emoteToUpdate) {
-    await downloadEmote(emoteToUpdate, true)
-  } else {
-    for (const emoteName in emotes) {
-      await downloadEmote(emoteName)
+  const emoteSet = emotes.reduce((acc, item) => {
+    if (staticEmoteOverrides[item.name]) {
+      acc[item.name] = `${item.id}_${staticEmoteOverrides[item.name]}`
+    } else {
+      acc[item.name] = item.id
     }
-  }
+
+    return acc
+  }, {})
+
+  fs.writeFileSync(assetsPath, JSON.stringify(emoteSet, null, 2))
+
+  console.log('`emotesList.json` has been updated.')
 }
 
 main()

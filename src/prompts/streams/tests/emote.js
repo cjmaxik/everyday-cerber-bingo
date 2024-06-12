@@ -4,20 +4,32 @@
  */
 
 import * as chat from 'characters/chat'
+import emotesList from 'helpers/emotesList.json'
+
+const overridenEmotes = []
+Object.entries(emotesList).forEach(([key, value]) => {
+  if (value.includes('_')) {
+    overridenEmotes.push(key)
+  }
+})
+
+console.log(overridenEmotes)
 
 const emoteTest = {
   ...chat.base,
 
-  name: 'Emote test',
+  name: 'Emotes',
 
   prompts: Array.from({
-    ...chat.chatPrompts,
-    length: 48
+    ...overridenEmotes.map(emote => `:${emote}:`),
+    length: 25
   })
 }
 
+console.log(emoteTest)
+
 export default {
-  name: 'Emote test',
+  name: 'Frame override test',
   image: 'chat/chatting.png',
   participants: [
     emoteTest
