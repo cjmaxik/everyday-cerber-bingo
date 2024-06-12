@@ -70,7 +70,7 @@ export const chatPrompts = [
 // redeem related, turn off for a capitalism-free experience
 export const redeemPrompts = [
   'thighs redeem',
-  'licks during redeem (not\xa0ith)',
+  'licks during redeem (not\xa0kith)',
   'duck???',
   'confetti storm',
   'kith redeem',
