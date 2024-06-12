@@ -48,6 +48,7 @@ export const regularPrompts = [
   'sings "Mogu\xa0Mogu"',
   'forgets song lyrics',
   'sings Happy Birthday',
+  'sings unprompted',
   '"one more song!" but sings more',
 
   'activity interrupted by lv10+ hype train'
@@ -69,7 +70,8 @@ export const chatPrompts = [
   'chat spams :PETTHEMODS:',
   'chat spams WHERE IS CERBER :PANIC:',
   'chat tells a GOODWAN joke',
-  'wholesome chat moment'
+  'wholesome chat moment',
+  'chat spamming CERBER HATES US'
 ]
 
 export const redeemPrompts = [
@@ -87,7 +89,8 @@ export const redeemPrompts = [
   'eats a treat',
   'tangia spam',
   'dance party!',
-  'redeem breaks'
+  'redeem breaks',
+  'licks during a non-kith redeem'
 ]
 
 export const rareRedeemPrompts = [
@@ -109,6 +112,21 @@ export const cerbathonPrompts = [
   'just chatting until 2\xa0hour mark',
   'staring contest',
   'someone gifts 100 subs'
+]
+
+export const fnafPrompts = [
+  'death on night 1',
+  '2 deaths on nights 1-3',
+  '5 deaths on nights 4-5',
+  'sings any fnaf song',
+  '"har har harhar har"',
+  'scared by a redeem',
+
+  // Only applies to FNAF 1 and maybe 2 if I recall correctly
+  'golden freddy spawns',
+
+  // Not 100% sure how emote embeds work but I checked the chat prompts emote list and this seems to be fine
+  'chat spams WAYTOODANK'
 ]
 
 /* Only applies for collabs
