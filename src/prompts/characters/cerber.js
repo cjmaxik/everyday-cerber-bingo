@@ -28,29 +28,23 @@ export const base = {
 // Here goes very general prompts, which can be applied to every single stream
 export const regularPrompts = [
   // classics
-  'embarrassed',
-  'melts into puppy\xa0puddle',
+  'says she\'s embarrassed',
   'barks',
   '"no, minawan! stop!"',
   'asks minawan for help',
   'says hi to a bunch of people',
-  // 'cerber of the\xa0day',
-  'mods have to remind about redeems',
-  'appreciating (not\xa0MILM)',
   '36% moment',
   'says "yippee" unprompted',
-  'animal noises other than dog ones',
-
-  // cerber gaming
-  'forgets to actually play the game',
-
-  // karaoke
+  'animal noises (except dog ones)',
+  'forgets to play the game',
   'sings "Mogu\xa0Mogu"',
   'forgets song lyrics',
   'sings Happy Birthday',
   '"one more song!" but sings more',
-
-  'activity interrupted by lv10+ hype train'
+  'activity interrupted by lv10+ hype\xa0train',
+  'cleaning RP',
+  'sings unprompted (not karaoke)',
+  'mentions Bingo'
 ]
 
 // Any stuff berber can mention prompted or unprompted
@@ -61,21 +55,22 @@ export const mentionPrompts = [
   'asks if someone didn\'t AWOO',
   'greggs mention',
   'slugber mention (RIP)',
-  'catber / purrbert mention'
+  'catber / purrbert mention',
+  'mentions "tangia brainrot"'
 ]
 
+// chat related
 export const chatPrompts = [
-  // chat related
   'chat spams :PETTHEMODS:',
   'chat spams WHERE IS CERBER :PANIC:',
   'chat tells a GOODWAN joke',
-  'wholesome chat moment'
+  'chat spams "cerber hates us"'
 ]
 
+// redeem related, turn off for a capitalism-free experience
 export const redeemPrompts = [
-  // redeem related, turn off for a capitalism-free experience
   'thighs redeem',
-  'licks during kith',
+  'licks during redeem (not\xa0ith)',
   'duck???',
   'confetti storm',
   'kith redeem',
@@ -85,27 +80,27 @@ export const redeemPrompts = [
   'AWOOOO redeem',
   'hydrate redeem',
   'eats a treat',
-  'tangia spam',
   'dance party!',
-  'redeem breaks'
+  'redeem breaks',
+  'mods have to remind about redeems'
 ]
 
+// redeem related, legacy redeems / redeems that are very rarely on
 export const rareRedeemPrompts = [
-  // redeem related, legacy redeems / redeems that are very rarely on
   'chmeese',
   'minawan eaten',
   'stretch redeem'
 ]
 
+// cerbathon specific
 export const cerbathonPrompts = [
-  // cerbathon specific
   'stream ends, timer has increased since start',
   'cerbathon splash animation more than once',
   'cerber fact of the\xa0day',
   'can\'t decide what to do',
   '"your timer is broken, it\'s only going up"',
-  // 'bingo metagaming' <- this one is kinda unclear & rare so idk
   'lore video premiere',
+  'lore video plays more than once in 10 minutes',
   'just chatting until 2\xa0hour mark',
   'staring contest',
   'someone gifts 100 subs'
