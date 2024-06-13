@@ -7,9 +7,7 @@ export default [
     children: [
       {
         path: '/',
-        redirect: _ => {
-          return { path: '/cerber/cerbathon' }
-        }
+        component: () => import('pages/IndexPage.vue')
       },
 
       {

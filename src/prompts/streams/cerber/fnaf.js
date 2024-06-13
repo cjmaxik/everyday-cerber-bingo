@@ -11,21 +11,8 @@ const regularCerber = {
 
   prompts: mergeUnique(
     ...cerber.regularPrompts,
-    ...cerber.mentionPrompts
-  )
-}
-
-const redeemPrompts = {
-  ...cerber.base,
-
-  id: 'redeems',
-  name: 'Redeems',
-  color: '#bb440b',
-
-  prompts: mergeUnique(
+    ...cerber.mentionPrompts,
     ...cerber.redeemPrompts
-    // TODO: add rare redeems if they are more common during the stream
-    // ...cerber.rareRedeemPrompts
   )
 }
 
@@ -40,12 +27,22 @@ const chatPrompts = {
 
 const fnafPrompts = {
   ...cerber.base,
+
   id: 'fnaf',
   name: 'Five Nights at Freddy\'s',
+  color: '#bb440b',
 
-  prompts: mergeUnique(
-    ...cerber.cerbathonPrompts
-  )
+  prompts: [
+    'death on a\xa0first\xa0night',
+    '2 deaths on\xa0nights 1-3',
+    '5 deaths on\xa0nights 4-5',
+    'sings any fnaf\xa0song',
+    '"har\xa0har harhar\xa0har"',
+    'scared by a\xa0redeem',
+
+    // Only applies to FNAF 1 and maybe 2 if I recall correctly
+    'golden freddy spawns'
+  ]
 }
 
 const cerbathonPrompts = {
@@ -58,11 +55,10 @@ const cerbathonPrompts = {
   )
 }
 
-//
 export default {
-  name: 'FNAF',
+  name: 'Five Nights at Freddy\'s',
   image: 'cerber/random/{x}.png',
   participants: [
-    regularCerber, chatPrompts, redeemPrompts, fnafPrompts, cerbathonPrompts
+    regularCerber, fnafPrompts, chatPrompts, cerbathonPrompts
   ]
 }

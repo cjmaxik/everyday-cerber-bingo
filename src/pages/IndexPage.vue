@@ -4,7 +4,7 @@
       class="bg-cerber text-white text-center shadow-5 shadow-transition"
       rounded
     >
-      <span class="text-h5">
+      <span class="text-h4">
         Welcome to <br v-show="$q.screen.lt.sm">Everyday <span class="text-weight-bold">Cerber</span> Bingo!
       </span>
     </q-banner>
@@ -81,8 +81,9 @@ const settings = useGameSettingsStore()
 settings.streamName = null
 
 // stepper ref
-const step = ref(1)
-const currentCharacter = ref(null)
+// TODO: remove if more characters
+const step = ref(2)
+const currentCharacter = ref('cerber')
 
 /**
  * @param {string} character

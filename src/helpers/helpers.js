@@ -135,9 +135,10 @@ export const getRandomInt = (min, max, lastInt = null) => {
 /**
  * Generates seed phrase based on a browser + current date in UTC timezone + random user seed (in local storage)
  * @param {number} version
+ * @param {string} name
  * @returns {string} Seed phrase
  */
-export const generateBrowserSeed = (version) => {
+export const generateBrowserSeed = (version, name) => {
   const randomUserSeed = useLocalStorage('randomUserSeed', getRandomInt(1, 69420))
   console.debug('Random user seed -', randomUserSeed.value)
 
@@ -155,7 +156,8 @@ export const generateBrowserSeed = (version) => {
     now.getUTCFullYear().toString(),
     Intl.DateTimeFormat().resolvedOptions().timeZone,
     window.navigator?.languages.toString() ?? 'en',
-    randomUserSeed.value.toString()
+    randomUserSeed.value.toString(),
+    name
   ).replaceAll(/[^a-zA-Z0-9]+/g, '')
 }
 

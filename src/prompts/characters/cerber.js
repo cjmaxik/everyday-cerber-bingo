@@ -57,7 +57,7 @@ export const mentionPrompts = [
   'greggs mention',
   'slugber mention (RIP)',
   'catber / purrbert mention',
-  'mentions "tangia brainrot"'
+  '"tangia brainrot"'
 ]
 
 // chat related
@@ -76,7 +76,7 @@ export const redeemPrompts = [
   'duck???',
   'confetti storm',
   'kith redeem',
-  'someone is called a good boy/girl',
+  'someone is called a good\xa0boy/girl',
   'put in jail',
   'ara ara redeem',
   'AWOOOO redeem',
@@ -107,22 +107,6 @@ export const cerbathonPrompts = [
   'just chatting until 2\xa0hour mark',
   // 'staring contest',
   'someone gifts 100 subs'
-]
-
-export const fnafPrompts = [
-  'death on night 1',
-  '2 deaths on nights 1-3',
-  '5 deaths on nights 4-5',
-  'sings any fnaf song',
-  '"har har harhar har"',
-  'scared by a redeem',
-
-  // Only applies to FNAF 1 and maybe 2 if I recall correctly
-  'golden freddy spawns',
-
-  // Not 100% sure how emote embeds work but I checked the chat prompts emote list and this seems to be fine
-  'chat spams WAYTOODANK'
-
 ]
 
 /* Only applies for collabs

@@ -4,6 +4,7 @@ import * as Types from 'helpers/types.d'
 
 // vue-related
 import { defineStore, acceptHMRUpdate } from 'pinia'
+import { getRandomInt } from 'helpers/helpers'
 import { useLocalStorage, usePreferredReducedMotion } from '@vueuse/core'
 const preferredMotion = usePreferredReducedMotion()
 
@@ -18,6 +19,7 @@ export const useGameSettingsStore = defineStore('gameSettings', {
     hideTally: useLocalStorage('hideTally', true),
     emotes: useLocalStorage('emotes', preferredMotion.value === 'reduce' ? 'static' : 'animated'),
     volume: useLocalStorage('volume', 100),
+    randomUserSeed: useLocalStorage('randomUserSeed', getRandomInt(1, 69420)),
 
     streamName: ''
   }),
