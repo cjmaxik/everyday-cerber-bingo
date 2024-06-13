@@ -26,7 +26,8 @@ export const indexMenu = {
       {
         name: null,
         entries: [
-          { to: 'cerbathon', text: 'Subathon', color: '#700b1b' }
+          { to: 'cerbathon', text: 'Cerbathon', color: '#700b1b' },
+          { to: 'fnaf', text: 'Five Nights at Freddy\'s', color: '#bb440b' }
         ]
       }
     ]

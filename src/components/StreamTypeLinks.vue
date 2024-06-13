@@ -1,23 +1,13 @@
 <template>
-  <q-btn
-    class="absolute-left"
-    color="white"
-    icon="keyboard_arrow_left"
-    padding="xs"
-    style="height: 100%; z-index:999;"
-    text-color="purrbert"
-    @click="$emit('returnToSelection')"
-  />
-
   <div
-    class="q-ml-sm text-h5 q-my-sm text-center"
+    class="text-h5 q-my-sm text-center"
     :class="`text-${id}`"
   >
-    {{ characterName }} streams
+    Choose a {{ characterName }} stream
   </div>
 
   <q-list
-    class="q-ml-sm q-mt-sm text-center no-scroll"
+    class="q-mt-sm text-center no-scroll"
     separator
   >
     <template v-for="{ name, entries } in streams">

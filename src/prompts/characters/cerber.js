@@ -40,6 +40,7 @@ export const regularPrompts = [
   'sings "Mogu\xa0Mogu"',
   'forgets song lyrics',
   'sings Happy Birthday',
+
   '"one more song!" but sings more',
   'activity interrupted by lv10+ hype\xa0train',
   'cleaning RP',
@@ -56,7 +57,7 @@ export const mentionPrompts = [
   'greggs mention',
   'slugber mention (RIP)',
   'catber / purrbert mention',
-  'mentions "tangia brainrot"'
+  '"tangia brainrot"'
 ]
 
 // chat related
@@ -64,7 +65,8 @@ export const chatPrompts = [
   'chat spams :PETTHEMODS:',
   'chat spams WHERE IS CERBER :PANIC:',
   'chat tells a GOODWAN joke',
-  'chat spams "cerber hates us"'
+  'wholesome chat moment',
+  'chat spamming CERBER HATES US'
 ]
 
 // redeem related, turn off for a capitalism-free experience
@@ -74,12 +76,13 @@ export const redeemPrompts = [
   'duck???',
   'confetti storm',
   'kith redeem',
-  'someone is called a good boy/girl',
+  'someone is called a good\xa0boy/girl',
   'put in jail',
   'ara ara redeem',
   'AWOOOO redeem',
   'hydrate redeem',
   'eats a treat',
+  'tangia spam',
   'dance party!',
   'redeem breaks',
   'mods have to remind about redeems'

@@ -11,7 +11,10 @@ export default {
    */
   cerber: {
     // Cerbathon
-    cerbathon: () => import('streams/cerber/cerbathon')
+    cerbathon: () => import('streams/cerber/cerbathon'),
+
+    // FNAF Day
+    fnaf: () => import('streams/cerber/fnaf')
   },
 
   /**
