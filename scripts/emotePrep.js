@@ -19,7 +19,9 @@ const apiUrl = 'https://7tv.io/v3/emote-sets/661eb372740d0db81544b867'
  * Use Frames feature on `ezgif.com` to get the list of frames (frame number - 1).
 */
 const staticEmoteOverrides = {
+  ASSEMBLE: 104,
   AWOO: 47,
+  British: 53,
   catKISS: 35,
   cerberLore: 149,
   cerberPuddle: 170,
@@ -29,10 +31,11 @@ const staticEmoteOverrides = {
   GOODWAN: 11,
   Listening: 105,
   NO: 23,
+  NOWAYING: 25,
   PANIC: 11,
   pogs: 42,
-  YES: 24,
-  NOWAYING: 25
+  SCATTER: 21,
+  YES: 24
 }
 
 /**
@@ -48,12 +51,9 @@ const filterList = [
   'TIMER',
 
   // already have an applicable emote
-  'ASSEMBLE',
-  'dejj',
   'GIGACHAD',
   'happie',
   'peepoShy',
-  'SCATTER',
   'Yesyes',
 
   // not needed
@@ -61,6 +61,7 @@ const filterList = [
   'catPls',
   'cerberChmeese',
   'cerberOnline',
+  'ekiDay',
   'FLASHBANG',
   'GroupStripp',
   'LUBBERS',

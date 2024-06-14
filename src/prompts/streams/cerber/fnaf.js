@@ -12,7 +12,8 @@ const regularCerber = {
   prompts: mergeUnique(
     ...cerber.regularPrompts,
     ...cerber.mentionPrompts,
-    ...cerber.redeemPrompts
+    ...cerber.redeemPrompts,
+    ...cerber.cerbathonPrompts
   )
 }
 
@@ -34,31 +35,26 @@ const fnafPrompts = {
 
   prompts: [
     'death on a\xa0first\xa0night',
-    '2 deaths on\xa0nights 1-3',
-    '5 deaths on\xa0nights 4-5',
+    'died twice on\xa0nights 1-3',
+    'died five times on\xa0nights 4-5',
     'sings any fnaf\xa0song',
     '"har\xa0har harhar\xa0har"',
     'scared by a\xa0redeem',
-
-    // Only applies to FNAF 1 and maybe 2 if I recall correctly
-    'golden freddy spawns'
+    'Toreador March',
+    'won with no\xa0battery left',
+    '"I ALWAYS COME\xa0BACK"',
+    'chat spams "WAS\xa0THAT THE BITE\xa0OF\xa087?"',
+    'nose honk in two\xa0games',
+    'golden freddy on\xa0screen',
+    'killed by\xa0Foxy',
+    'dies (outside of other prompts on your board)'
   ]
-}
-
-const cerbathonPrompts = {
-  ...cerber.base,
-  id: 'cerbathon',
-  name: 'Cerbathon',
-
-  prompts: mergeUnique(
-    ...cerber.cerbathonPrompts
-  )
 }
 
 export default {
   name: 'Five Nights at Freddy\'s',
   image: 'cerber/random/{x}.png',
   participants: [
-    regularCerber, fnafPrompts, chatPrompts, cerbathonPrompts
+    regularCerber, fnafPrompts, chatPrompts
   ]
 }
