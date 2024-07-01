@@ -15,12 +15,12 @@
   },
   "dependencies": {
     "@quasar/extras": "^1.16.5",
-    "seedrandom": "^3.0.5",
     "@types/seedrandom": "^3.0.5",
     "@vueuse/core": "^10.1.2",
     "axios": "^1.4.0",
     "pinia": "^2.0.11",
     "quasar": "^2.12.4",
+    "seedrandom": "^3.0.5",
     "vue": "^3.3.4",
     "vue-router": "^4.2.4"
   },
@@ -37,7 +37,7 @@
     "postcss": "^8.4.14"
   },
   "engines": {
-    "node": "^18",
-    "npm": ">= 6.13.4"
+    "node": "^20",
+    "npm": ">= 10.8"
   }
 }

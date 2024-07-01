@@ -18,7 +18,8 @@ export const base = {
     'garggle.mp3',
     'bah.mp3',
     'tequila.mp3',
-    'short_awoo.mp3'
+    'short_awoo.mp3',
+    'butibwibububwa.mp3'
   ]
 }
 
@@ -27,10 +28,9 @@ export const base = {
 
 // Here goes very general prompts, which can be applied to every single stream
 export const regularPrompts = [
-  // classics
   'says she\'s embarrassed',
   'barks',
-  '"no, minawan! stop!"',
+  '"minawan! stop!"',
   'asks minawan for help',
   'says hi to a bunch of people',
   '36% moment',
@@ -40,33 +40,33 @@ export const regularPrompts = [
   'sings "Mogu\xa0Mogu"',
   'forgets song lyrics',
   'sings Happy Birthday',
-
   '"one more song!" but sings more',
   'activity interrupted by lv10+ hype\xa0train',
-  'cleaning RP',
+  'roleplay of any kind',
   'sings unprompted (not karaoke)',
-  'mentions Bingo'
+  'mentions Bingo',
+  'feeds chat',
+  'audio dies'
 ]
 
 // Any stuff berber can mention prompted or unprompted
 export const mentionPrompts = [
-  'says "I\'m a hellhound"',
-  'Man I Love Minawan',
+  'says "I\'m a\xa0hellhound"',
+  'says "Man I Love Minawan"',
   'struggles to come up with a minawan name',
   'asks if someone didn\'t AWOO',
   'greggs mention',
   'slugber mention (RIP)',
   'catber / purrbert mention',
-  '"tangia brainrot"'
+  'says "tangia brainrot"'
 ]
 
 // chat related
 export const chatPrompts = [
   'chat spams :PETTHEMODS:',
   'chat spams WHERE IS CERBER :PANIC:',
-  'chat tells a GOODWAN joke',
-  'wholesome chat moment',
-  'chat spamming CERBER HATES US'
+  'chat spamming CERBER HATES US',
+  'wholesome chat moment'
 ]
 
 // redeem related, turn off for a capitalism-free experience
@@ -76,7 +76,7 @@ export const redeemPrompts = [
   'duck???',
   'confetti storm',
   'kith redeem',
-  'someone is called a good\xa0boy/girl',
+  'a good boy/girl',
   'put in jail',
   'ara ara redeem',
   'AWOOOO redeem',
@@ -85,7 +85,8 @@ export const redeemPrompts = [
   'tangia spam',
   'dance party!',
   'redeem breaks',
-  'mods have to remind about redeems'
+  'mods reminds about redeems',
+  'any redeem not\xa0mentioned on the board'
 ]
 
 // redeem related, legacy redeems / redeems that are very rarely on
@@ -97,16 +98,15 @@ export const rareRedeemPrompts = [
 
 // cerbathon specific
 export const cerbathonPrompts = [
-  'stream ends, timer has increased since start',
-  'cerbathon splash animation more than once',
-  'cerber fact of the\xa0day',
+  'timer >200hrs at the end of\xa0the stream',
+  'cerbathon splash animation more than twice',
+  'fact of the day or wisdom',
   'can\'t decide what to do',
-  '"your timer is broken, it\'s only going up"',
   'lore video premiere',
   'lore video plays more than once in 10 minutes',
   'just chatting until 2\xa0hour mark',
-  // 'staring contest',
-  'someone gifts 100 subs'
+  'someone gifts 100 subs or\xa0100k\xa0bits',
+  'Golden Kappa\xa0Train'
 ]
 
 /* Only applies for collabs

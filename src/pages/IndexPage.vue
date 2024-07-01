@@ -5,7 +5,7 @@
       rounded
     >
       <span class="text-h4">
-        Welcome to <br v-show="$q.screen.lt.sm">Everyday <span class="text-weight-bold">Cerber</span> Bingo!
+        Welcome to <br>Everyday <span class="text-weight-bold">Cerber</span> Bingo!
       </span>
     </q-banner>
 

@@ -3,7 +3,7 @@
     class="text-h5 q-my-sm text-center"
     :class="`text-${id}`"
   >
-    Choose a {{ characterName }} stream
+    SELECT A STREAM:
   </div>
 
   <q-list

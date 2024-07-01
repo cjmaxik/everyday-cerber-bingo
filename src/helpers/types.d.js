@@ -109,4 +109,4 @@
  * @property {CharacterMenuData} cerber
  */
 
-export {}
+export { }
