@@ -55,11 +55,7 @@
           ref="noopener noreferrer"
           href="https://github.com/cjmaxik/everyday-cerber-bingo?ref=cerber-bingo"
           target="_blank"
-        >GitHub</a>. Based on <a
-          ref="noopener noreferrer"
-          href="https://github.com/cjmaxik/everyday-neuro-bingo?ref=cerber-bingo"
-          target="_blank"
-        >Everyday Neuro Bingo</a>.
+        >GitHub</a>.
       </p>
 
       <p v-else>
@@ -67,7 +63,7 @@
           ref="noopener noreferrer"
           href="https://github.com/cjmaxik/everyday-cerber-bingo#credits?ref=cerber-bingo"
           target="_blank"
-        >here</a> and in the About section.
+        >here</a> and in the About section. Art by melodream, galaxywikart and Cerber.
       </p>
 
       <hr>

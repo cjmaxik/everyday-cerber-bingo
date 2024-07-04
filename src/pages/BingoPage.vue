@@ -133,7 +133,7 @@
       <q-card class="bg-primary text-white">
         <q-card-section class="row items-center q-pb-none">
           <div class="text-h6">
-            Dear neurons!
+            Dear Minawan!
           </div>
           <q-space />
           <q-btn
@@ -146,8 +146,8 @@
         </q-card-section>
 
         <q-card-section class="q-pt-none">
-          Do not bait Neuro into saying things on the board with donations and highlighted messages. This is not how Bingo
-          is supposed to be played.<br>Please enjoy the content first.
+          Do not bait Cerber into saying things on the board with bits and highlighted messages. This is not how Bingo is supposed to be played.<br>
+          Please enjoy the content first.
           <div class="text-right">
             - CJMAXiK
           </div>
@@ -183,11 +183,11 @@ import { useGameSettingsStore } from 'stores/gameSettings'
 const props = defineProps({
   character: {
     type: String,
-    default: 'neuro'
+    default: 'cerber'
   },
   type: {
     type: String,
-    default: 'solo'
+    default: 'cerbathon'
   }
 })
 

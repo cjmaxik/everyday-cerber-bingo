@@ -9,8 +9,6 @@ New Bingo card for CerberVT every day! Watch Cerber's streams and follow along.
 - [**CJMAXiK**](https://cjmaxik.com?ref=cerber-bingo) - Developer
 - [**VibrationJaveline**](https://www.twitch.tv/unmovablejaveline?ref=cerber-bingo) - Prompt Editor
 
-Based on [Everyday Neuro Bingo](https://github.com/cjmaxik/everyday-neuro-bingo?ref=cerber-bingo)
-
 ### Special thanks
 
 - **[Cerber Serber](https://discord.gg/cerberserber?ref=cerber-bingo)** - prompts, feedback and moral support
@@ -56,4 +54,4 @@ quasar build
 
 - Source code - [MIT](./LICENSE.md)
 - Prompts - [Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/)
-- Art belongs to their respective creators
+- Art by melodream, galaxywikart and Cerber

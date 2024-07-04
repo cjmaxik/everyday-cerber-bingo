@@ -33,9 +33,4 @@ export const prepareBaseText = (text) => {
   return text
     // remove emote wrappers
     .replaceAll(':', '')
-
-  // replace long emote names
-  // .replace('neuroplushsittingverycomfortablewhilesheroastsaporowithherfriends', 'neuroPlush with Poro')
-  // .replace('spams reallyGunPull vedalPls', 'shoots Vedal')
-  // .replace('AnnyLebronJam', 'Anny LebronJam')
 }

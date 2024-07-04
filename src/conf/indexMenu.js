@@ -8,10 +8,10 @@ import * as Types from 'helpers/types.d'
  */
 export const upcoming = null
 // export const upcoming = {
-//   to: 'neuro/lia',
-//   text: 'Collab with Lia',
-//   color: '#a52174',
-//   date: 'Friday, 3 PM EST / 7 PM UTC'
+//   to: '',
+//   text: '',
+//   color: '',
+//   date: ''
 // }
 
 /**
