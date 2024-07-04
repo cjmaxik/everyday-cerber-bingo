@@ -59,11 +59,7 @@
       </p>
 
       <p v-else>
-        Full credits are available <a
-          ref="noopener noreferrer"
-          href="https://github.com/cjmaxik/everyday-cerber-bingo#credits?ref=cerber-bingo"
-          target="_blank"
-        >here</a> and in the About section. Art by melodream, galaxywikart and Cerber.
+        Art by melodream, galaxywikart and Cerber.
       </p>
 
       <hr>
