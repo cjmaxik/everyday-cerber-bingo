@@ -1,7 +1,13 @@
 <template>
   <q-page class="index">
+    <q-banner class="bg-red text-white text-center shadow-10 shadow-transition rounded-borders">
+      <span class="text-h4">
+        New domain: <a href="https://bingo.berber.uk">bingo.berber.uk</a>
+      </span>
+    </q-banner>
+
     <q-banner
-      class="bg-cerber text-white text-center shadow-5 shadow-transition"
+      class="q-my-sm bg-cerber text-white text-center shadow-5 shadow-transition rounded-borders"
       rounded
     >
       <span class="text-h4">
