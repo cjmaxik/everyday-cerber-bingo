@@ -1,6 +1,9 @@
 <template>
   <q-page class="index">
-    <q-banner class="bg-red text-white text-center shadow-10 shadow-transition rounded-borders">
+    <q-banner
+      v-if="$route.query.from"
+      class="bg-red text-white text-center shadow-10 shadow-transition rounded-borders"
+    >
       <span class="text-h4">
         New domain: <a href="https://bingo.berber.uk">bingo.berber.uk</a>
       </span>
