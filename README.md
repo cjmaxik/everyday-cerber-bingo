@@ -8,6 +8,7 @@ New Bingo card for CerberVT every day! Watch Cerber's streams and follow along.
 
 - [**CJMAXiK**](https://cjmaxik.com?ref=cerber-bingo) - Developer
 - [**VibrationJaveline**](https://www.twitch.tv/unmovablejaveline?ref=cerber-bingo) - Prompt Editor
+- Art by melodream, galaxywikart and Cerber
 
 ### Special thanks
 
@@ -54,4 +55,3 @@ quasar build
 
 - Source code - [MIT](./LICENSE.md)
 - Prompts - [Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/)
-- Art by melodream, galaxywikart and Cerber
