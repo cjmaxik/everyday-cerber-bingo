@@ -77,7 +77,9 @@ const filterList = [
   'sitt',
   'Smelly',
   'stripp',
-  'YIPPIE'
+  'YIPPIE',
+  'LickTheMods',
+  'OFFLINECHAT'
 ]
 
 const main = async () => {

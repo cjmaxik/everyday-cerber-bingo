@@ -66,7 +66,8 @@ export const chatPrompts = [
   'chat spams :PETTHEMODS:',
   'chat spams WHERE IS CERBER :PANIC:',
   'chat spamming CERBER HATES US',
-  'wholesome chat moment'
+  'wholesome chat moment',
+  'Vedal in chat :Tutel:'
 ]
 
 // redeem related, turn off for a capitalism-free experience
