@@ -279,7 +279,7 @@ const decrement = (block) => {
   checkForWin(block, true)
 }
 
-const winSound = new Audio('../assets/sounds/vine-boom.mp3')
+const winSound = new Audio('../assets/sounds/big-yippie.mp3')
 let lastRandomId = -1
 
 /**
