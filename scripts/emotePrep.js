@@ -55,6 +55,7 @@ const filterList = [
   'happie',
   'peepoShy',
   'Yesyes',
+  'TUCKK',
 
   // not needed
   '4Evil',
