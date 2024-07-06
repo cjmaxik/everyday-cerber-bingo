@@ -58,6 +58,8 @@ const filterList = [
 
   // not needed
   '4Evil',
+  'BLELELE',
+  'JUDGE',
   'catPls',
   'cerberChmeese',
   'cerberOnline',
@@ -70,7 +72,6 @@ const filterList = [
   'MyHonestReaction',
   'ohCry',
   'okak',
-  'OMEGALUL',
   'ono',
   'poggcrazy',
   'sajj',
