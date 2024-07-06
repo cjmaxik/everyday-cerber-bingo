@@ -34,7 +34,7 @@ export const regularPrompts = [
   'asks minawan for help',
   'says hi to a bunch of people',
   '36% moment',
-  'says "yippee" unprompted',
+  'says "yippie" unprompted',
   'animal noises (except dog ones)',
   'forgets to play the game',
   'sings "Mogu\xa0Mogu"',
@@ -104,7 +104,8 @@ export const cerbathonPrompts = [
   'fact of the day or wisdom',
   'can\'t decide what to do',
   'lore video premiere',
-  'lore video plays more than once in 10 minutes',
+  'lore video twice in 10 minutes',
+  'lore video three times in 60 minutes',
   'just chatting until 2\xa0hour mark',
   'someone gifts 100 subs or\xa0100k\xa0bits',
   'Golden Kappa\xa0Train'
