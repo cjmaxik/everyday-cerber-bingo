@@ -12,17 +12,7 @@
 }
 
 body {
-  // @extend .bg-cerber;
-  background-image:
-    linear-gradient(black, black),
-    url(https://static01.nyt.com/images/2019/04/11/fashion/04HOTTOPIC3/merlin_27838406_ff6a6017-5a93-41cb-823a-abdeee68e64f-articleLarge.jpg);
-  // background-size: cover;
-  background-blend-mode: saturation;
-  filter: grayscale(100%) !important;
-}
-
-body::before {
-  filter: grayscale(100%);
+  @extend .bg-cerber;
 }
 
 .cerber-font {
