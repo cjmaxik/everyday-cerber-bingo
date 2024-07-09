@@ -73,7 +73,6 @@ export const chatPrompts = [
 // redeem related, turn off for a capitalism-free experience
 export const redeemPrompts = [
   'thighs redeem',
-  'licks during redeem (not\xa0kith)',
   'duck???',
   'confetti storm',
   'kith redeem',
@@ -86,7 +85,7 @@ export const redeemPrompts = [
   'tangia spam',
   'dance party!',
   'redeem breaks',
-  'mods reminds about redeems',
+  'mods remind about redeems',
   'any redeem not\xa0mentioned on the board'
 ]
 
@@ -99,7 +98,7 @@ export const rareRedeemPrompts = [
 
 // cerbathon specific
 export const cerbathonPrompts = [
-  'timer >200hrs at the end of\xa0the stream',
+  'timer >150hrs at the end of\xa0the stream',
   'cerbathon splash animation more than twice',
   'fact of the day or wisdom',
   'can\'t decide what to do',
