@@ -30,6 +30,7 @@
     "autoprefixer": "^10.4.2",
     "eslint": "^8.10.0",
     "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-depend": "^0.8.0",
     "eslint-plugin-import": "^2.19.1",
     "eslint-plugin-n": "^15.0.0",
     "eslint-plugin-promise": "^6.0.0",
@@ -39,5 +40,18 @@
   "engines": {
     "node": "^20",
     "npm": ">= 10.8"
+  },
+  "overrides": {
+    "array-includes": "npm:@nolyfill/array-includes@^1",
+    "array.prototype.findlastindex": "npm:@nolyfill/array.prototype.findlastindex@^1",
+    "array.prototype.flat": "npm:@nolyfill/array.prototype.flat@^1",
+    "array.prototype.flatmap": "npm:@nolyfill/array.prototype.flatmap@^1",
+    "hasown": "npm:@nolyfill/hasown@^1",
+    "is-core-module": "npm:@nolyfill/is-core-module@^1",
+    "isarray": "npm:@nolyfill/isarray@^1",
+    "object.fromentries": "npm:@nolyfill/object.fromentries@^1",
+    "object.groupby": "npm:@nolyfill/object.groupby@^1",
+    "object.values": "npm:@nolyfill/object.values@^1",
+    "side-channel": "npm:@nolyfill/side-channel@^1"
   }
 }
