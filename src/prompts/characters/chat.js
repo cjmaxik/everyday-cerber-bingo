@@ -1,7 +1,7 @@
 export const base = {
   id: 'chat',
   name: 'Chat',
-  color: '#7f59b6',
+  color: '#2d74cd',
   assetsFolder: 'chat',
   image: 'minawan.png',
   sounds: [
