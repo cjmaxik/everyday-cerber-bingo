@@ -18,7 +18,6 @@ export const base = {
     'garggle.mp3',
     'bah.mp3',
     'tequila.mp3',
-    'short_awoo.mp3',
     'butibwibububwa.mp3'
   ]
 }

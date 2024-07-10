@@ -10,7 +10,7 @@
     </q-banner>
 
     <q-banner
-      class="q-my-sm bg-cerber text-white text-center shadow-5 shadow-transition rounded-borders"
+      class="q-my-sm bg-purrbert text-white text-center shadow-5 shadow-transition rounded-borders"
       rounded
     >
       <span class="text-h4">

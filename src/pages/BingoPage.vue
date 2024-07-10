@@ -279,8 +279,10 @@ const decrement = (block) => {
   checkForWin(block, true)
 }
 
-const winSound = new Audio('../assets/sounds/big-yippie.mp3')
 let lastRandomId = -1
+
+const winSound = ['big-yippie.mp3', 'short_awoo.mp3'].map(x => new Audio('../assets/sounds/' + x))
+let lastWinId = -1
 
 /**
  * Check for winning state
@@ -297,12 +299,12 @@ const checkForWin = (block, decrement = false) => {
 
   let soundToPlay = null
   if (win?.length !== state.previousWin) {
-    soundToPlay = winSound
+    lastWinId = getRandomInt(0, winSound.length - 1, lastWinId)
+    soundToPlay = winSound[lastWinId]
   } else {
     if (state.getTally(index) === 1) {
-      const randomId = getRandomInt(0, sounds.length - 1, sounds.length > 1 ? lastRandomId : null)
-      soundToPlay = sounds[randomId]
-      lastRandomId = randomId
+      lastRandomId = getRandomInt(0, sounds.length - 1, sounds.length > 1 ? lastRandomId : null)
+      soundToPlay = sounds[lastRandomId]
     }
   }
 

@@ -81,6 +81,12 @@ body {
 }
 
 .bingo-card {
+  display: grid;
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+  height: 100%;
+  user-select: none;
+
   .bingo-block {
 
     &.free,
@@ -88,12 +94,6 @@ body {
       @extend .center-image;
     }
   }
-
-  display: grid;
-  grid-column-gap: 0;
-  grid-row-gap: 0;
-  height: 100%;
-  user-select: none;
 
   &.big {
     font-size: 25px;
