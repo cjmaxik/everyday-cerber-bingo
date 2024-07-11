@@ -3,11 +3,21 @@ import { mergeUnique } from 'src/helpers/helpers'
 import * as cerber from 'characters/cerber'
 import * as chat from 'characters/chat'
 
+const fnafSounds = [
+  'peetza/1.mp3',
+  'peetza/2.mp3',
+  'peetza/3.mp3',
+  'peetza/4.mp3',
+  'peetza/5.mp3',
+  'peetza/6.mp3'
+]
+
 const regularCerber = {
   ...cerber.base,
 
   id: 'cerber',
   name: 'Cerber',
+  sounds: fnafSounds,
 
   prompts: mergeUnique(
     ...cerber.regularPrompts,
@@ -28,6 +38,7 @@ const chatPrompts = {
 
 const fnafPrompts = {
   ...cerber.base,
+  sounds: fnafSounds,
 
   id: 'fnaf',
   name: 'Five Nights at Freddy\'s',
