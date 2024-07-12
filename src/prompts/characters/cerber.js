@@ -45,7 +45,8 @@ export const regularPrompts = [
   'sings unprompted (not karaoke)',
   'mentions Bingo',
   'feeds chat',
-  'audio dies'
+  'audio dies',
+  'got rickrolled'
 ]
 
 // Any stuff berber can mention prompted or unprompted
