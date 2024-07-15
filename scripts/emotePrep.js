@@ -49,6 +49,7 @@ const filterList = [
   // too much frames
   'Dance',
   'TIMER',
+  'cerberSphere',
 
   // already have an applicable emote
   'GIGACHAD',
