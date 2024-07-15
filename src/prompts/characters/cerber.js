@@ -72,7 +72,6 @@ export const chatPrompts = [
 
 // redeem related, turn off for a capitalism-free experience
 export const redeemPrompts = [
-  'thighs redeem',
   'duck???',
   'confetti storm',
   'kith redeem',
