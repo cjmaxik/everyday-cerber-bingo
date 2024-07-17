@@ -104,7 +104,7 @@ export const cerbathonPrompts = [
   'lore video premiere',
   'lore video twice in 10 minutes',
   'lore video three times in 60 minutes',
-  'plays the lore video on accident',
+  'cerbathon splash animation doesn\'t play',
   'just chatting until 2\xa0hour mark',
   'someone gifts 100 subs or\xa0100k\xa0bits',
   'Golden Kappa\xa0Train'
