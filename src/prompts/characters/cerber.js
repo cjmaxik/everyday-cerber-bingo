@@ -97,7 +97,7 @@ export const rareRedeemPrompts = [
 
 // cerbathon specific
 export const cerbathonPrompts = [
-  'timer >150hrs at the end of\xa0the stream',
+  'timer >100hrs at the end of\xa0the stream',
   'cerbathon splash animation more than twice',
   'fact of the day or wisdom',
   'can\'t decide what to do',
@@ -105,7 +105,7 @@ export const cerbathonPrompts = [
   'lore video twice in 10 minutes',
   'lore video three times in 60 minutes',
   'cerbathon splash animation doesn\'t play',
-  'just chatting until 2\xa0hour mark',
+  'just chatting until 1.5\xa0hour mark',
   'someone gifts 100 subs or\xa0100k\xa0bits',
   'Golden Kappa\xa0Train'
 ]
